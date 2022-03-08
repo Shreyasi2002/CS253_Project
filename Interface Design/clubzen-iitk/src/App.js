@@ -1,15 +1,16 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
-
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-      <Switch>
+      <Routes>
           <Route exact path='/'>
             <Home />
           </Route>
-      </Switch>
+          <Route>
+            404 Error
+          </Route>
+      </Routes>
   );
 }
 
