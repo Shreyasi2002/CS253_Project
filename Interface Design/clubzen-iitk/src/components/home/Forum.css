@@ -1,0 +1,69 @@
+.background-forum{
+    background-image: url('/public/Images/forum.jpg');
+    /* Center and scale the image nicely */
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 5%;
+}
+
+.bounding-box{
+    max-width: 300px;
+    margin-left: 10%;
+    background-color: black;
+    padding: 0 2%;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-top: 2%;
+}
+
+.container-forum{
+    border-left: 1px solid white;    
+    height: auto;
+    margin-top: 10%;
+    color: white;
+    padding: 5% 0;
+}
+
+.container-forum > h6{
+    padding-left: 10%;
+    font-size: 14px;
+}
+
+.container-forum > h4{
+    border-left: 2px solid white;
+    padding-left: calc(10% - 1px);
+    font-size: 23px;
+}
+
+.container-forum > p{
+    padding-left: 10%;
+}
+
+.forum-button{
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 7px;
+    font-size: 18px;
+    padding: 10px 10px;
+    margin-left: 10%;
+    
+}
+
+.forum-button > n{
+    font-family: 'Montserrat', sans-serif;
+    border-right: 1px solid black;
+    padding: 12px 16px;
+}
+
+.forum-button .icon-button{
+    padding-left: 8px;
+    padding-right: 4px;
+}
+
+.forum-button:hover{
+    background-color: gainsboro;
+}

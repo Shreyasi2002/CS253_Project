@@ -1,9 +1,9 @@
 import React from 'react'
 import { useLocation } from 'react-router';
 
-import { NavLink } from './Links.styled'
+import { NavLink1 } from './Links.styled'
 
-import './Navs.css'
+import './Navs_white.css'
 
 const LINKS = [
     { to: '/councils', text: 'Councils' },
@@ -13,23 +13,23 @@ const LINKS = [
     { to: '/forum', text: 'Forum' },
 ];
 
-const Navs = () => {
+const NavsWhite = () => {
   const location = useLocation();
   return (
       <header>
-          <nav className='nav'>
-              <h3 className='nav-logo'><NavLink to="/">ClubZen IITK</NavLink></h3>
-              <ul className='nav-items'>
+          <nav className='nav-white'>
+              <h3 className='nav-logo-white'><NavLink1 to="/">ClubZen IITK</NavLink1></h3>
+              <ul className='nav-items-white'>
                 {LINKS.map(item => (
                         <li key={item.to}>
-                            <NavLink
+                            <NavLink1
                                 to={item.to}
                                 className={
                                     item.to === location.pathname ? 'active' : ''
                                 }
                             >
                                 {item.text}
-                            </NavLink>
+                            </NavLink1>
                         </li>
                     ))}
               </ul>
@@ -38,4 +38,4 @@ const Navs = () => {
   )
 }
 
-export default Navs
+export default NavsWhite

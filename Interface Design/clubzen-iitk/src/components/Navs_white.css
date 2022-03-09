@@ -1,0 +1,21 @@
+.nav-white {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+}
+
+.nav-logo-white {
+    padding-left: 50px;
+}
+
+.nav-items-white {
+    list-style: none;
+    display: flex;
+    padding-right: 30px;
+}
+
+.nav-items-white > li {
+    padding: 0 30px;
+}
