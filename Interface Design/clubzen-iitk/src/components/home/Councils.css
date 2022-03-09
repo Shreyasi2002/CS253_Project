@@ -32,7 +32,7 @@
   }
 
 .council-content{
-    margin-left: 10%;
+    margin-left: 5%;
     margin-top: 3%;
     padding-left: 5%;
     margin-bottom: 3%;
@@ -52,6 +52,7 @@
     margin-top: 3%;
     padding-left: 5%;
     margin-bottom: 3%;
+    padding-right: 5%;
 }
 
 .row2{
@@ -59,6 +60,7 @@
     color: white;
     margin-top: 2%;
     opacity: 0.9;
+    padding-bottom: 2%;
 }
 
 .home-button{
