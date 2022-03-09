@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import './Navs.css'
 
@@ -8,7 +9,7 @@ const Navs = () => {
           <nav className='nav'>
               <h3 className='nav-logo'>ClubZen IITK</h3>
               <ul className='nav-items'>
-                  <li>Councils & Fests</li>
+                  <li> <Link to></Link> Councils & Fests</li>
                   <li>News</li>
                   <li>Forum</li>
               </ul>
