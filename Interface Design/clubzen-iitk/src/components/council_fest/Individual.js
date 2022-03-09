@@ -23,7 +23,7 @@ const Individual = () => {
                             us in this journey to explore the unknown.
                         </p>
                     </div>
-                    <StyledLink to='/forum' className='row-button'>
+                    <StyledLink to='/clubs' className='row-button'>
                         <n>Explore Clubs</n>
                         <FontAwesomeIcon className='icon-button' icon={faArrowRight} />
                     </StyledLink>
@@ -54,7 +54,7 @@ const Individual = () => {
                             all you do need is a pinch of 'enthu'! 
                         </p>
                     </div>
-                    <StyledLink to='/forum' className='row-button'>
+                    <StyledLink to='/clubs' className='row-button'>
                         <n>Explore Clubs</n>
                         <FontAwesomeIcon className='icon-button' icon={faArrowRight} />
                     </StyledLink>
@@ -77,7 +77,7 @@ const Individual = () => {
                             We have come a long way, and have a lot further to go.
                         </p>
                     </div>
-                    <StyledLink to='/forum' className='row-button'>
+                    <StyledLink to='/clubs' className='row-button'>
                         <n>Explore Clubs</n>
                         <FontAwesomeIcon className='icon-button' icon={faArrowRight} />
                     </StyledLink>

@@ -7,8 +7,9 @@ import './Navs_white.css'
 
 const LINKS = [
     { to: '/councils', text: 'Councils' },
-    { to: '/fests', text: 'Festivals'},
-    { to: '/news', text: 'News' },
+    { to: '/fests', text: 'Festivals' },
+    { to: '/clubs', text: 'Clubs'},
+    { to: '/news', text: 'News & Feed' },
     { to: '/forum', text: 'Forum' },
 ];
 
