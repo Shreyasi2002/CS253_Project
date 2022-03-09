@@ -32,6 +32,7 @@ const Individual = () => {
                     <img src='/Images/Snt_picture.png' alt='snt' />
                 </div>
             </div>
+            <br/><br/>
             <div className='row-council2'>
                 <div className='column-council image-council'>
                     <img src='/Images/MnC_pic.png' alt='snt' />
@@ -60,6 +61,7 @@ const Individual = () => {
                     </StyledLink>
                 </div>
             </div>
+            <br/><br/>
             <div className='row-council'>
                 <div className='column-council'>
                     <div className='row-content'>
@@ -86,6 +88,7 @@ const Individual = () => {
                     <img src='/Images/GnS_pic.png' alt='snt' />
                 </div>
             </div>
+            <br/><br/>
             <div className='row-council2'>
                 <div className='column-council image-council'>
                     <img src='/Images/AnC_pic.png' alt='snt' />

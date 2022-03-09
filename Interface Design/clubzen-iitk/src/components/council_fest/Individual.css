@@ -49,10 +49,11 @@
 }
 .column-council{
     flex: 50%;
+    padding-bottom: 20px;
 }
 
 .image-council{
-    margin-top: 3%;
+    margin-top: 5%;
     padding-left: 5%;
     margin-bottom: 3%;
     padding-right: 5%;
@@ -67,6 +68,7 @@
     background-color: black;
     color: white;
     opacity: 0.9;
+    padding-bottom: 20px;
 }
 
 .row-content2{

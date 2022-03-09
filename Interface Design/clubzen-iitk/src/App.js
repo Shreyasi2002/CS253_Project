@@ -27,7 +27,7 @@ function App() {
             <Route path='/news' element={<News />} />
             <Route path='/fests' element={<Fests />} /> 
             <Route path='/clubs' element={<Clubs />} />     
-            </Routes>
+        </Routes>
       </ThemeProvider>
   );
 }

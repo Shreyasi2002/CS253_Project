@@ -7,10 +7,13 @@ import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 import { HashRouter } from 'react-router-dom';
+import ScrollToTop from './components/misc/ScrollToTop';
 
 ReactDOM.render(
-  <HashRouter>
-    <App />
+    <HashRouter>
+        <ScrollToTop>
+            <App />
+        </ScrollToTop>
   </HashRouter>,
   document.getElementById('root')
 );
