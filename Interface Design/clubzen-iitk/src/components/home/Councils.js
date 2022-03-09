@@ -1,4 +1,6 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 import './Councils.css'
 
@@ -23,15 +25,15 @@ const Councils = () => {
                   <p>
                       Antaragni, IIT Kanpur boasts the status of being one of India's
                       biggest cultural festivals, annually entertaining a crowd
-                      with a footfall of more than ... Techkriti, the technical
-                      and entrepreneurship festival by IIT Kanpur ... 
+                      with a footfall of more than ... <br/>Techkriti, the technical
+                      and entrepreneurship festival by IIT Kanpur ... <br/>
                       Udghosh, an exhibition of sporting fervour, and success in the meet 
                       that has been ratified by the success ... 
                   </p>
-                  <br/>
+                  <br/><br/>
                   <button className='home-button'>
                       <n>Discover</n>
-                      <i class="fa-solid fa-arrow-right"></i>
+                      <FontAwesomeIcon className='icon-button' icon={faArrowRight} />
                   </button>
               </div>
           </div>
@@ -45,7 +47,11 @@ const Councils = () => {
                       Councils comprise Clubs, Hobby Groups, and Institute Teams,
                       which cater to specific activities.
                   </p>
-                  <button className='button'>Discover</button>
+                  <br/><br/>
+                  <button className='home-button'>
+                      <n>Discover</n>
+                      <FontAwesomeIcon className='icon-button' icon={faArrowRight} />
+                  </button>
               </div>
               <div className='column'>
                 {/* image */}

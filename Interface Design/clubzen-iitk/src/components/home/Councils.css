@@ -45,7 +45,6 @@
 }
 
 .column > img{
-    height: 100%;
     width: 100%;
 }
 
@@ -59,10 +58,11 @@
     background-color: black;
     color: white;
     margin-top: 2%;
+    opacity: 0.9;
 }
 
 .home-button{
-    border: 1px;
+    border: 1px solid black;
     color: black;
     background-color: white;
     cursor: pointer;
@@ -76,4 +76,9 @@
     font-family: 'Montserrat', sans-serif;
     border-right: 1px solid black;
     padding: 12px 16px;
+}
+
+.home-button .icon-button{
+    padding-left: 8px;
+    padding-right: 4px;
 }
