@@ -55,8 +55,8 @@ const Councils = () => {
                       <FontAwesomeIcon className='icon-button' icon={faArrowRight} />
                   </button>
               </div>
-              <div className='column'>
-                {/* image */}
+              <div className='column image-column'>
+                <img src='/Images/Council_IITK.png' alt='councils'/>
               </div>
           </div>
       </>
