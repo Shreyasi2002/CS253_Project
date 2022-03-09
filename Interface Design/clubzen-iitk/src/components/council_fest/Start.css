@@ -1,0 +1,14 @@
+.council-start{
+    text-align: center;
+    justify-content: center;
+    padding: 100px 10%;
+}
+
+.council-start > h1{
+    font-size: 45px;
+}
+
+.council-start > p{
+    padding: 0 10%;
+    font-size: 20px;
+}

@@ -32,7 +32,7 @@ const Councils = () => {
                       that has been ratified by the success ... 
                   </p>
                   <br/><br/>
-                  <StyledLink to='/councils' className='home-button'>
+                  <StyledLink to='/fests' className='home-button'>
                       <n>Discover</n>
                       <FontAwesomeIcon className='icon-button' icon={faArrowRight} />
                   </StyledLink>

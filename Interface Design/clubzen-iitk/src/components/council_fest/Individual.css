@@ -1,0 +1,88 @@
+.row-button{
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 7px;
+    font-size: 18px;
+    padding: 10px 10px;
+    margin-left: 10%;
+    
+}
+
+.row-button > n{
+    font-family: 'Montserrat', sans-serif;
+    border-right: 1px solid black;
+    padding: 12px 16px;
+}
+
+.row-button .icon-button{
+    padding-left: 8px;
+    padding-right: 4px;
+}
+
+.row-button:hover{
+    background-color: gainsboro;
+}
+
+.row-content{
+    border-left: 1px solid black;    
+    height: auto;
+    margin-top: 10%;
+    padding: 2% 0 5%;
+}
+
+.row-content > h4{
+    padding-left: 10%;
+    font-size: 23px;
+}
+
+.row-content > p{
+    border-left: 2px solid black;
+    padding-left: calc(10% - 1px);
+    padding-right: 5%;
+}
+
+.row-council{
+    display: flex;
+    margin-left: 10%;
+}
+.column-council{
+    flex: 50%;
+}
+
+.image-council{
+    margin-top: 3%;
+    padding-left: 5%;
+    margin-bottom: 3%;
+    padding-right: 5%;
+}
+
+.column-council > img{
+    width: 100%;
+}
+
+.row-council2{
+    display: flex;
+    background-color: black;
+    color: white;
+    opacity: 0.9;
+}
+
+.row-content2{
+    border-left: 1px solid white;    
+    height: auto;
+    margin-top: 10%;
+    padding: 2% 0 5%;
+}
+
+.row-content2 > h4{
+    padding-left: 10%;
+    font-size: 23px;
+}
+
+.row-content2 > p{
+    border-left: 2px solid white;
+    padding-left: calc(10% - 1px);
+    padding-right: 5%;
+}

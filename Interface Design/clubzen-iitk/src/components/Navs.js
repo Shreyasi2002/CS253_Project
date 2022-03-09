@@ -6,7 +6,8 @@ import { NavLink } from './Links.styled'
 import './Navs.css'
 
 const LINKS = [
-    { to: '/councils', text: 'Councils & Fests' },
+    { to: '/councils', text: 'Councils' },
+    { to: '/fests', text: 'Festivals'},
     { to: '/news', text: 'News' },
     { to: '/forum', text: 'Forum' },
 ];
