@@ -7,11 +7,11 @@ const Navs = () => {
   return (
       <header>
           <nav className='nav'>
-              <h3 className='nav-logo'>ClubZen IITK</h3>
+              <h3 className='nav-logo'><Link to="/">ClubZen IITK</Link></h3>
               <ul className='nav-items'>
-                  <li> <Link to></Link> Councils & Fests</li>
-                  <li>News</li>
-                  <li>Forum</li>
+                  <li><Link to="/councils">Councils & Fests</Link></li>
+                  <li><Link to='/news'>News</Link></li>
+                  <li><Link to='/forum'>Forum</Link></li>
               </ul>
           </nav>
       </header>
