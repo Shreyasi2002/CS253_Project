@@ -14,4 +14,14 @@ export const NavLink = styled(Link)`
 export const StyledLink = styled(Link)`
     cursor: pointer;
     text-decoration: none;
-`
+`;
+
+export const NavLink1 = styled(Link)`
+    color: ${({ theme }) => theme.mainColors.black};
+    cursor: pointer;
+    text-decoration: none;
+    &.active {
+        color: ${({ theme }) => theme.mainColors.dark};
+        text-decoration: none;
+    }
+`;

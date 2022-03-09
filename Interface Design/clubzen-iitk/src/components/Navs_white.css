@@ -1,21 +1,21 @@
-.nav {
+.nav-white {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
-.nav-logo {
+.nav-logo-white {
     padding-left: 50px;
 }
 
-.nav-items {
+.nav-items-white {
     list-style: none;
     display: flex;
     padding-right: 30px;
 }
 
-.nav-items > li {
+.nav-items-white > li {
     padding: 0 30px;
 }

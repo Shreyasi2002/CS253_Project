@@ -6,7 +6,7 @@ import MainPageLayout from '../components/MainPageLayout'
 
 const Home = () => {
   return (
-      <MainPageLayout>
+      <MainPageLayout color='black'>
           <Video />
           <Councils />
           <Forum />
