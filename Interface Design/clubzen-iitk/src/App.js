@@ -1,11 +1,12 @@
 import React from 'react';
+import Navs from './components/Navs';
 
 
 function App() {
   return (
-      <div>
-          <h1>Testing</h1>
-      </div>
+      <>
+          <Navs />
+      </>
   );
 }
 
