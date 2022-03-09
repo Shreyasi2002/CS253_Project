@@ -1,0 +1,27 @@
+.container{
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content > h1{
+    font-size: 47px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.content > p{
+    font-size: 20px;
+}
+
+.image{
+    width: 100%;
+
+}

@@ -1,8 +1,14 @@
 import React from 'react'
+import Footer from './Footer'
+import Navs from './Navs'
 
-const MainPageLayout = () => {
+const MainPageLayout = ({ children }) => {
   return (
-    <div>MainPageLayout</div>
+      <div>
+          <Navs />
+          {children}
+          <Footer />
+      </div>
   )
 }
 
