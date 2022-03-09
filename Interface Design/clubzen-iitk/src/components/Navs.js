@@ -1,17 +1,35 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { useLocation } from 'react-router';
+
+import { NavLink } from './Links.styled'
 
 import './Navs.css'
 
+const LINKS = [
+    { to: '/councils', text: 'Councils & Fests' },
+    { to: '/news', text: 'News' },
+    { to: '/forum', text: 'Forum' },
+];
+
 const Navs = () => {
+  const location = useLocation();
   return (
       <header>
           <nav className='nav'>
-              <h3 className='nav-logo'><Link to="/">ClubZen IITK</Link></h3>
+              <h3 className='nav-logo'><NavLink to="/">ClubZen IITK</NavLink></h3>
               <ul className='nav-items'>
-                  <li><Link to="/councils">Councils & Fests</Link></li>
-                  <li><Link to='/news'>News</Link></li>
-                  <li><Link to='/forum'>Forum</Link></li>
+                {LINKS.map(item => (
+                        <li key={item.to}>
+                            <NavLink
+                                to={item.to}
+                                className={
+                                    item.to === location.pathname ? 'active' : ''
+                                }
+                            >
+                                {item.text}
+                            </NavLink>
+                        </li>
+                    ))}
               </ul>
           </nav>
       </header>

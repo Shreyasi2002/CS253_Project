@@ -1,8 +1,11 @@
 import React from 'react'
+import MainPageLayout from '../components/MainPageLayout'
 
 const News = () => {
   return (
-    <div>News</div>
+      <MainPageLayout>
+          
+    </MainPageLayout>
   )
 }
 

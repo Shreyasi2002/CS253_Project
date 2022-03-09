@@ -35,6 +35,7 @@ const Councils = () => {
                       <n>Discover</n>
                       <FontAwesomeIcon className='icon-button' icon={faArrowRight} />
                   </button>
+                  <br/><br/>
               </div>
           </div>
           <div className='row1'>

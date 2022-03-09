@@ -1,8 +1,11 @@
 import React from 'react'
+import MainPageLayout from '../components/MainPageLayout'
 
 const Forum = () => {
   return (
-    <div>Forum</div>
+      <MainPageLayout>
+          
+      </MainPageLayout>
   )
 }
 
