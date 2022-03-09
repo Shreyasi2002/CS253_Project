@@ -41,8 +41,10 @@ const Councils = () => {
               <div className='column council-content'>
                   <h2>COUNCILS</h2>
                   <p>
-                      The four Councils along with cells carry out the executive
-                      responsibilities of the Students' Gymkhana. Each council
+                      The four Councils - Academics & Career, Games & Sports,
+                      Media & Cultute and Science & Technology, along with cells
+                      carry out the executive
+                      responsibilities of the Students' Gymkhana. <br/>Each council
                       executes affairs pertaining to an overarching purpose. The
                       Councils comprise Clubs, Hobby Groups, and Institute Teams,
                       which cater to specific activities.
@@ -57,7 +59,6 @@ const Councils = () => {
                 {/* image */}
               </div>
           </div>
-          <div></div>
       </>
   )
 }

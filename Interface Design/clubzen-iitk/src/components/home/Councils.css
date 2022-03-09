@@ -82,3 +82,7 @@
     padding-left: 8px;
     padding-right: 4px;
 }
+
+.home-button:hover{
+    background-color: gainsboro;
+}
