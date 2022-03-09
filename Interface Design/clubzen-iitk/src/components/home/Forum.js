@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 import './Forum.css'
+import { StyledLink } from '../Links.styled'
 
 const Forum = () => {
   return (
@@ -19,11 +20,11 @@ const Forum = () => {
                   </p>
                   <br/>
             </div>
-            <button className='forum-button'>
+            <StyledLink to='/forum' className='forum-button'>
                 <n>Explore Forum</n>
                 <FontAwesomeIcon className='icon-button' icon={faArrowRight} />
-              </button>
-              <br/><br/><br/>
+            </StyledLink>
+            <br/><br/><br/>
             &nbsp;
           </div>
           <br/>

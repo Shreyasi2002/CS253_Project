@@ -10,3 +10,8 @@ export const NavLink = styled(Link)`
         text-decoration: none;
     }
 `;
+
+export const StyledLink = styled(Link)`
+    cursor: pointer;
+    text-decoration: none;
+`

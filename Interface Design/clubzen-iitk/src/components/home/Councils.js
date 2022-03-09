@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 import './Councils.css'
+import { StyledLink } from '../Links.styled'
 
 const Councils = () => {
   return (
@@ -31,10 +32,10 @@ const Councils = () => {
                       that has been ratified by the success ... 
                   </p>
                   <br/><br/>
-                  <button className='home-button'>
+                  <StyledLink to='/councils' className='home-button'>
                       <n>Discover</n>
                       <FontAwesomeIcon className='icon-button' icon={faArrowRight} />
-                  </button>
+                  </StyledLink>
                   <br/><br/>
               </div>
           </div>
@@ -51,10 +52,10 @@ const Councils = () => {
                       which cater to specific activities.
                   </p>
                   <br/><br/>
-                  <button className='home-button'>
+                  <StyledLink to='/councils' className='home-button'>
                       <n>Discover</n>
                       <FontAwesomeIcon className='icon-button' icon={faArrowRight} />
-                  </button>
+                  </StyledLink>
               </div>
               <div className='column image-column'>
                 <img src='/Images/Council_IITK.png' alt='councils'/>
