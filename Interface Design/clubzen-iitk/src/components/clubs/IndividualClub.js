@@ -16,6 +16,7 @@ const IndividualClub = () => {
         <div className="column">{/* empty */}</div>
       </div>
       {/* Grid */}
+
       <div className="row-grid">
         <div className="column-grid">
           <div className="content-grid">
@@ -27,36 +28,6 @@ const IndividualClub = () => {
           <div className="content-grid">
             <img src="/Images/snt/Astronomy.png" alt="astronomy" />
             <h3>Astronomy Club</h3>
-          </div>
-        </div>
-        <div className="column-grid">
-          <div className="content-grid">
-            <img src="/Images/snt/Electronics.png" alt="electronics" />
-            <h3>Electronics Club</h3>
-          </div>
-        </div>
-        <div className="column-grid">
-          <div className="content-grid">
-            <img src="/Images/snt/Finance.png" alt="finance" />
-            <h3>Finance & Analytics Club</h3>
-          </div>
-        </div>
-        <div className="column-grid">
-          <div className="content-grid">
-            <img src="/Images/snt/Programming.png" alt="programming" />
-            <h3>Programming Club</h3>
-          </div>
-        </div>
-        <div className="column-grid">
-          <div className="content-grid">
-            <img src="/Images/snt/Robotics.png" alt="robotics" />
-            <h3>Robotics Club</h3>
-          </div>
-        </div>
-        <div className="column-grid">
-          <div className="content-grid">
-            <img src="/Images/snt/SpeedCubing.png" alt="speedcubing" />
-            <h3>SpeedCubing Club</h3>
           </div>
         </div>
         <div className="column-grid">
@@ -73,8 +44,14 @@ const IndividualClub = () => {
         </div>
         <div className="column-grid">
           <div className="content-grid">
-            <img src="/Images/snt/consulting.png" alt="consulting" />
-            <h3>IITK Consulting Group</h3>
+            <img src="/Images/snt/Electronics.png" alt="electronics" />
+            <h3>Electronics Club</h3>
+          </div>
+        </div>
+        <div className="column-grid">
+          <div className="content-grid">
+            <img src="/Images/snt/Finance.png" alt="finance" />
+            <h3>Finance & Analytics Club</h3>
           </div>
         </div>
         <div className="column-grid">
@@ -85,8 +62,32 @@ const IndividualClub = () => {
         </div>
         <div className="column-grid">
           <div className="content-grid">
+            <img src="/Images/snt/consulting.png" alt="consulting" />
+            <h3>IITK Consulting Group</h3>
+          </div>
+        </div>
+        <div className="column-grid">
+          <div className="content-grid">
+            <img src="/Images/snt/Programming.png" alt="programming" />
+            <h3>Programming Club</h3>
+          </div>
+        </div>
+        <div className="column-grid">
+          <div className="content-grid">
+            <img src="/Images/snt/Robotics.png" alt="robotics" />
+            <h3>Robotics Club</h3>
+          </div>
+        </div>
+        <div className="column-grid">
+          <div className="content-grid">
             <img src="/Images/snt/coffee science.png" alt="science" />
             <h3>Science Coffee House</h3>
+          </div>
+        </div>
+        <div className="column-grid">
+          <div className="content-grid">
+            <img src="/Images/snt/SpeedCubing.png" alt="speedcubing" />
+            <h3>SpeedCubing Club</h3>
           </div>
         </div>
       </div>
