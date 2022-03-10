@@ -6,7 +6,7 @@ import MainPageLayout from '../components/MainPageLayout'
 
 const Fests = () => {
   return (
-      <MainPageLayout>
+      <MainPageLayout color='black'>
           <StartFest /> 
           <IndividualFest />
     </MainPageLayout>
