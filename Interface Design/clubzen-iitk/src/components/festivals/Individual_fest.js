@@ -30,7 +30,7 @@ const IndividualFest = () => {
               folk dances, and much more.
             </p>
           </div>
-          <StyledLink to="/clubs" className="row-button">
+          <StyledLink to="/fests/antaragni" className="row-button">
             <n>Explore</n>
             <FontAwesomeIcon className="icon-button" icon={faArrowRight} />
           </StyledLink>
@@ -55,7 +55,7 @@ const IndividualFest = () => {
               by various other attractions like pro-Nights, comedy nights etc.
             </p>
           </div>
-          <StyledLink to="/clubs" className="row-button">
+          <StyledLink to="#" className="row-button">
             <n>Explore</n>
             <FontAwesomeIcon className="icon-button" icon={faArrowRight} />
           </StyledLink>
@@ -86,7 +86,7 @@ const IndividualFest = () => {
               management. 
             </p>
           </div>
-          <StyledLink to="/clubs" className="row-button">
+          <StyledLink to="#" className="row-button">
             <n>Explore</n>
             <FontAwesomeIcon className="icon-button" icon={faArrowRight} />
           </StyledLink>
