@@ -1,0 +1,92 @@
+.header-start{
+    border-left: 1px solid black;
+    height: auto;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.header-start > h6{
+    padding-left: 10%;
+    font-size: 14px;
+}
+
+.header-start > p{
+    border-left: 2px solid black;
+    padding-left: calc(10% - 1px);
+    font-size: 23px;
+}
+
+.column{
+    flex: 50%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.row-grid {
+    margin: 0 9%;
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row-grid,
+  .row-grid > .column-grid {
+    padding: 1%;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column-grid {
+    -ms-flex: 23%; /* IE10 */
+    flex: 23%;
+    max-width: 23%;
+  }
+  
+  /* Clear floats after rows 
+  .row-grid:after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+  
+  /* Content */
+  .content-grid {
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.5);
+    border-radius: 10px;
+    transition: transform .2s; /* Animation */
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+  }
+
+  .content-grid:hover{
+      transform: scale(1.07);
+  }
+
+  .content-grid > img{
+      width: 100%;
+      border-radius: 5px;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column-grid {
+        -ms-flex: 48%;
+        flex: 48%;
+      max-width: 48%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column-grid {
+        -ms-flex: 100%;
+        flex: 100%;
+      max-width: 100%;
+    }
+  }

@@ -22,17 +22,11 @@
 
 .row, .row1, .row2{
     display: flex;
+    flex-direction: row;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-    }
-  }
-
 .council-content{
-    margin-left: 10%;
+    margin-left: 5%;
     margin-top: 3%;
     padding-left: 5%;
     margin-bottom: 3%;
@@ -52,6 +46,7 @@
     margin-top: 3%;
     padding-left: 5%;
     margin-bottom: 3%;
+    padding-right: 5%;
 }
 
 .row2{
@@ -59,6 +54,7 @@
     color: white;
     margin-top: 2%;
     opacity: 0.9;
+    padding-bottom: 2%;
 }
 
 .home-button{
@@ -86,3 +82,4 @@
 .home-button:hover{
     background-color: gainsboro;
 }
+

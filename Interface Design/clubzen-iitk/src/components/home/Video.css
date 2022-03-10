@@ -25,3 +25,15 @@
     width: 100%;
 
 }
+
+.container1{
+    position: relative;
+    text-align: center;
+    color: black;
+    background-color: black;
+}
+.image1{
+    width: 100%;
+    opacity: 0.8;
+
+}
