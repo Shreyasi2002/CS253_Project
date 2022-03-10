@@ -25,16 +25,6 @@
     flex-direction: row;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-    }
-    .row, .row1, .row2{
-        flex-direction: column;
-    }
-  }
-
 .council-content{
     margin-left: 5%;
     margin-top: 3%;
@@ -92,3 +82,4 @@
 .home-button:hover{
     background-color: gainsboro;
 }
+

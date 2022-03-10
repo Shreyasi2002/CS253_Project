@@ -1,0 +1,26 @@
+.header-start{
+    border-left: 1px solid black;
+    height: auto;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.header-start > h6{
+    padding-left: 10%;
+    font-size: 14px;
+}
+
+.header-start > p{
+    border-left: 2px solid black;
+    padding-left: calc(10% - 1px);
+    font-size: 23px;
+}
+
+.column{
+    flex: 50%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
