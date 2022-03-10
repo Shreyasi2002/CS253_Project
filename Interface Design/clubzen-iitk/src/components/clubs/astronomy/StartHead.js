@@ -9,7 +9,7 @@ const StartHead = () => {
             <img src='/Images/clubs/astronomy/background.jpeg' alt='background' className='image-h' />
             <div className='content-h'>
                 <h1>ASTRONOMY CLUB IITK</h1>
-                <p>Passion about the constantly evolving universe ...</p>
+                <p>For those who are passionate about the constantly evolving universe ...</p>
             </div>
         </div></>
   )
