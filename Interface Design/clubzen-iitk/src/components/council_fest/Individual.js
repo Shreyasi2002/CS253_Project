@@ -5,6 +5,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { StyledLink } from '../Links.styled'
 import './Individual.css'
 
+
 const Individual = () => {
     return (
         <>
