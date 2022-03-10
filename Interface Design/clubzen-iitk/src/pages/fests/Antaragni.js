@@ -1,8 +1,9 @@
 import React from 'react'
+import MainPageLayout from '../../components/MainPageLayout'
 
 const Antaragni = () => {
   return (
-    <div>Antaragni</div>
+    <MainPageLayout>Antaragni</MainPageLayout>
   )
 }
 
