@@ -13,6 +13,7 @@ const LINKS = [
   { to: "/fests", text: "Festivals" },
   { to: "/clubs", text: "Clubs" },
   { to: "/news", text: "News & Feed" },
+  { to: "/calendar", text: "Calendar" },
   { to: "/forum", text: "Forum" },
 ];
 
@@ -42,8 +43,8 @@ const overlay = (
 const NavsWhite = () => {
   const location = useLocation();
   return (
-      <header>
-          {overlay}
+    <header>
+      {overlay}
       <nav className="nav-white">
         <h3 className="nav-logo-white">
           <NavLink1 to="/">ClubZen IITK</NavLink1>
@@ -59,9 +60,9 @@ const NavsWhite = () => {
               </NavLink1>
             </li>
           ))}
-                  <li className="icon-menu">
-              <FontAwesomeIcon icon={faBars} onClick={openNav} />
-            </li>
+          <li className="icon-menu">
+            <FontAwesomeIcon icon={faBars} onClick={openNav} />
+          </li>
         </ul>
       </nav>
     </header>

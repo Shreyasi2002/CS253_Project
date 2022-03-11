@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router";
 import { ThemeProvider } from "styled-components";
+import Calendar from "./pages/Calendar";
 import Clubs from "./pages/Clubs";
 import Astronomy from "./pages/clubs/Astronomy";
 import Councils from "./pages/Councils";
@@ -31,6 +32,7 @@ function App() {
         <Route path="/clubs" element={<Clubs />} />
         <Route path="/clubs/astronomy" element={<Astronomy />} />
         <Route path="/fests/antaragni" element={<Antaragni />} />
+        <Route path="/calendar" element={<Calendar />} />
       </Routes>
     </ThemeProvider>
   );

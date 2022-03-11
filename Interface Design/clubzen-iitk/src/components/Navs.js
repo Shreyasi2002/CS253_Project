@@ -13,6 +13,7 @@ const LINKS = [
   { to: "/fests", text: "Festivals" },
   { to: "/clubs", text: "Clubs" },
   { to: "/news", text: "News & Feed" },
+  { to: "/calendar", text: "Calendar" },
   { to: "/forum", text: "Forum" },
 ];
 
