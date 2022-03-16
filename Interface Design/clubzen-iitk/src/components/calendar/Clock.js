@@ -51,9 +51,6 @@ class Clock extends React.Component {
 
   render() {
     let date = this.state.date;
-    let h = Clock.pad(date.getHours(), 2);
-    let m = Clock.pad(date.getMinutes(), 2);
-    let s = Clock.pad(date.getSeconds(), 2);
     let d = `${days[date.getDay()]}, ${
       months[date.getMonth()]
     } ${date.getDate()}, ${date.getFullYear()}`;
@@ -63,9 +60,7 @@ class Clock extends React.Component {
             <div>
             <p id="date">{d}</p>
             <hr />
-            <h3 id="hours">{h}:</h3>
-            <h3 id="minutes">{m}:</h3>
-            <h3 id="seconds">{s}</h3></div>
+            </div>
       </div>
     );
   }
