@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "clubzen.app.jwtExpirationMs",
+    "type": "java.lang.String",
+    "description": "A description for 'clubzen.app.jwtExpirationMs'"
+  },
+  {
+    "name": "clubzen.app.jwtSecret",
+    "type": "java.lang.String",
+    "description": "A description for 'clubzen.app.jwtSecret'"
+  }
+]}
