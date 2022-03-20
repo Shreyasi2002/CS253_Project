@@ -1,21 +1,74 @@
-# Clubzen IITK
+# About Clubzen IITK
 
-A platform to integrate all clubs and socities under MnC, SnT etc. and College fests in a modular format. A separate feed will be created for each club and society.
+A platform to integrate all clubs and societies under MnC, SnT, etc., and College fests in a modular format. A separate feed will be created for each club and community.
 
-Main features will be - 
+The main features of the app are - 
 1) Upcoming events and workshop section. 
-2) All club activities and achievements posted publicly. 
+2) All club activities and achievements are posted publicly. 
 3) Students' works posting and reviewing. 
-4) Contact with Secys and Coordis. 
+4) Contact with Secys and Coordinators. 
 5) Forums section for interacting with clubs. 
-6) Access levels with restricitions based on position of individuals. 
+6) Access levels with restrictions based on the position of individuals. 
 6) (Optional) Clubs' works in fests.
 
 
+## About the Web App
 
+As of now, the front-end and the backend are separate units.
 
+For Back-end Part,
 
+RESTful APIs are deployed on Heroku using Github and can be accessed anywhere worldwide.
 
+For the Front-end Part,
+
+The web app is deployed on Github-Pages and hosts the main page, login page, clubs page, councils page, festivals page, and calendar page for now.
+
+## Installation Requirements
+
+1) Web Browser
+2) Node.js
+3) npm
+4) Maven
+5) Tomcat
+6) Spring Framework
+7) Spring Boot
+8) JDK (Java Development Kit)
+9) Any Java or Spring IDE (for e.g. IntelliJ, Eclipse, Spring Tools Suite)
+
+## Installation
+
+For Frontend, i.e., website,
+
+1) Navigate to "/Interface Design/clubzen-iitk/".
+2) Open Command Line Terminal in this folder.
+3) Run the following commands one by one -
+4) npm install
+5) npm start
+
+The webpage will automatically open in localhost (http://localhost:3000/).
+
+If it doesn't automatically open, the user can open it manually.
+
+For the Back-end part,
+
+1) Navigate to "/Backend Units/{calendar or loginsignup or newsandevents}/".
+2) Open Command Line Terminal in this folder.
+3) Run the following command one by one -
+4) mvn clean install
+5) mvn spring-boot:run
+
+## Test Run
+
+The webpage can be tested using npm as stated in "Installation" part.
+
+The Backend Units can be tested using POSTMAN or any other API Client.
+
+The links to access the different APIS of different units are -
+
+1) loginsignup - [LoginSignup](https://cs253-signin-signup.herokuapp.com/)
+2) calendar - [Calendar](https://cs253-calendar.herokuapp.com/)
+3) newsandevents - [NewsAndEvents](https://cs253-news-and-events.herokuapp.com/)
 
 
 
