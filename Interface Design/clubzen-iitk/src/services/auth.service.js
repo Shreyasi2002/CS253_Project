@@ -1,7 +1,7 @@
 import axios from "axios";
-const API_URL = "http://localhost:8080/api/auth/";
+const API_URL = "https://cs253-signin-signup.herokuapp.com/";
 
-export const register = (username, fullname, email, password) => {
+export const RegisterAuth = (username, fullname, email, password) => {
   return axios.post(API_URL + "signup", {
     username,
     fullname,
@@ -9,7 +9,7 @@ export const register = (username, fullname, email, password) => {
     password,
   });
 };
-export const login = async (username, password) => {
+export const LoginAuth = async (username, password) => {
   const response = await axios
         .post(API_URL + "signin", {
             username,
@@ -20,10 +20,10 @@ export const login = async (username, password) => {
     }
     return response.data;
 };
-export const logout = () => {
+export const LogoutAuth = () => {
   localStorage.removeItem("user");
 };
 
-export const getCurrentUser = () => {
+export const GetCurrentUser = () => {
   return JSON.parse(localStorage.getItem("user"));
 };
