@@ -7,7 +7,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
@@ -50,6 +52,30 @@ public class CalendarModelController {
 		}
 		
 		return new ResponseEntity<>(calendarmodel, HttpStatus.CREATED);
+	}
+	
+	@PutMapping("/modifycalendarevent")
+	public ResponseEntity<CalendarModel> modifycalendarevent(@RequestPart("calendarmodel") CalendarModel calendarmodel,@RequestParam("id") String id){
+		CalendarModel newcalendarmodel = calendarrepository.findById(id)
+												.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
+		if(calendarmodel.getSubject()!=null)
+			newcalendarmodel.setSubject(calendarmodel.getSubject());
+		
+		if(calendarmodel.getLocation()!=null)
+			newcalendarmodel.setLocation(calendarmodel.getLocation());
+		
+		if(calendarmodel.getStartTime()!=null)
+			newcalendarmodel.setStartTime(calendarmodel.getStartTime());
+		
+		if(calendarmodel.getEndTime()!=null)
+			newcalendarmodel.setEndTime(calendarmodel.getEndTime());
+		
+		if(calendarmodel.getCategoryColor()!=null)
+			newcalendarmodel.setCategoryColor(calendarmodel.getCategoryColor());
+		
+		calendarrepository.save(newcalendarmodel);
+		
+		return new ResponseEntity<>(newcalendarmodel, HttpStatus.CREATED);
 	}
 	
 	@DeleteMapping("/deletecalendarevent")
