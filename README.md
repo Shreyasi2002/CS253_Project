@@ -34,7 +34,6 @@ The web app is deployed on Github-Pages and hosts the main page, login page, clu
 6) Spring Framework
 7) Spring Boot
 8) JDK (Java Development Kit)
-9) Any Java or Spring IDE (for e.g. IntelliJ, Eclipse, Spring Tools Suite)
 
 ## Installation
 
@@ -54,9 +53,11 @@ For the Back-end part,
 
 1) Navigate to "/Backend Units/{calendar or loginsignup or newsandevents}/".
 2) Open Command Line Terminal in this folder.
-3) Run the following command one by one -
+3) Run the following commands one by one (assuming a Tomcat Local server has already been built) -
 4) mvn clean install
 5) mvn spring-boot:run
+
+Now the user can test the APIs on localhost (http://localhost:8080/).
 
 ## Test Run
 
