@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Shreyasi2002/CS253_Project/static/css/main.f8d62de2.css",
-    "main.js": "/Shreyasi2002/CS253_Project/static/js/main.992b9664.js",
-    "static/js/377.8958ea6a.chunk.js": "/Shreyasi2002/CS253_Project/static/js/377.8958ea6a.chunk.js",
-    "static/media/forum.jpg": "/Shreyasi2002/CS253_Project/static/media/forum.51d01905c64aabcf6ea5.jpg",
-    "service-worker.js": "/Shreyasi2002/CS253_Project/service-worker.js",
-    "index.html": "/Shreyasi2002/CS253_Project/index.html",
-    "main.f8d62de2.css.map": "/Shreyasi2002/CS253_Project/static/css/main.f8d62de2.css.map",
-    "main.992b9664.js.map": "/Shreyasi2002/CS253_Project/static/js/main.992b9664.js.map",
-    "377.8958ea6a.chunk.js.map": "/Shreyasi2002/CS253_Project/static/js/377.8958ea6a.chunk.js.map"
+    "main.css": "/Shreyasi2002/CS253_Project/tree/main/Interface%20Design/clubzen-iitk/static/css/main.85775da7.css",
+    "main.js": "/Shreyasi2002/CS253_Project/tree/main/Interface%20Design/clubzen-iitk/static/js/main.c5e57c65.js",
+    "static/js/377.8958ea6a.chunk.js": "/Shreyasi2002/CS253_Project/tree/main/Interface%20Design/clubzen-iitk/static/js/377.8958ea6a.chunk.js",
+    "static/media/forum.jpg": "/Shreyasi2002/CS253_Project/tree/main/Interface%20Design/clubzen-iitk/static/media/forum.51d01905c64aabcf6ea5.jpg",
+    "service-worker.js": "/Shreyasi2002/CS253_Project/tree/main/Interface%20Design/clubzen-iitk/service-worker.js",
+    "index.html": "/Shreyasi2002/CS253_Project/tree/main/Interface%20Design/clubzen-iitk/index.html",
+    "main.85775da7.css.map": "/Shreyasi2002/CS253_Project/tree/main/Interface%20Design/clubzen-iitk/static/css/main.85775da7.css.map",
+    "main.c5e57c65.js.map": "/Shreyasi2002/CS253_Project/tree/main/Interface%20Design/clubzen-iitk/static/js/main.c5e57c65.js.map",
+    "377.8958ea6a.chunk.js.map": "/Shreyasi2002/CS253_Project/tree/main/Interface%20Design/clubzen-iitk/static/js/377.8958ea6a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8d62de2.css",
-    "static/js/main.992b9664.js"
+    "static/css/main.85775da7.css",
+    "static/js/main.c5e57c65.js"
   ]
 }
