@@ -1,19 +1,25 @@
 import axios from "axios";
-const API_URL = "https://cs253-clubzen-iitk.herokuapp.com/";
+const API_URL = "http://localhost:8080/";
 
 export const RegisterAuth = (username, fullname, email, password) => {
   return axios.post(API_URL + "signup", {
-    username,
-    fullname,
-    email,
-    password,
+    Params:{
+      username,
+      fullname,
+      email,
+      password,
+    },
+    Headers:{'Access-Control-Allow-Origin': '*'}
   });
 };
 export const LoginAuth = async (username, password) => {
   const response = await axios
         .post(API_URL + "signin", {
+          Params:{
             username,
             password,
+          },
+          Headers:{'Access-Control-Allow-Origin': "*"}
         });
     if (response.data) {
         localStorage.setItem("user", JSON.stringify(response.data));
