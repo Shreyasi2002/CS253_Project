@@ -62,46 +62,46 @@
             "Subject": "Holi Sports Camp Day-1",
             "Location": "Sports Complex",
             "StartTime": "2022-03-12T17:00:00.000Z",
-            "EndTime": "2022-03-17T19:30:00.000Z",
+            "EndTime": "2022-03-12T19:30:00.000Z",
             "CategoryColor": "#ea7a57"
         },
         {
             "Id": 33,
             "Subject": "Holi Sports Camp Day-2",
             "Location": "Sports Complex",
-            "StartTime": "2022-03-12T17:00:00.000Z",
-            "EndTime": "2022-03-17T19:30:00.000Z",
+            "StartTime": "2022-03-13T17:00:00.000Z",
+            "EndTime": "2022-03-13T19:30:00.000Z",
             "CategoryColor": "#ea7a57"
         },
         {
             "Id": 34,
             "Subject": "Holi Sports Camp Day-3",
             "Location": "Sports Complex",
-            "StartTime": "2022-03-12T17:00:00.000Z",
-            "EndTime": "2022-03-17T19:30:00.000Z",
+            "StartTime": "2022-03-14T17:00:00.000Z",
+            "EndTime": "2022-03-14T19:30:00.000Z",
             "CategoryColor": "#ea7a57"
         },
         {
             "Id": 35,
             "Subject": "Holi Sports Camp Day-4",
             "Location": "Sports Complex",
-            "StartTime": "2022-03-12T17:00:00.000Z",
-            "EndTime": "2022-03-17T19:30:00.000Z",
+            "StartTime": "2022-03-15T17:00:00.000Z",
+            "EndTime": "2022-03-15T19:30:00.000Z",
             "CategoryColor": "#ea7a57"
         },
         {
             "Id": 36,
             "Subject": "Holi Sports Camp Day-5",
             "Location": "Sports Complex",
-            "StartTime": "2022-03-12T17:00:00.000Z",
-            "EndTime": "2022-03-17T19:30:00.000Z",
+            "StartTime": "2022-03-16T17:00:00.000Z",
+            "EndTime": "2022-03-16T19:30:00.000Z",
             "CategoryColor": "#ea7a57"
         },
         {
             "Id": 37,
             "Subject": "Holi Sports Camp Day-6",
             "Location": "Sports Complex",
-            "StartTime": "2022-03-12T17:00:00.000Z",
+            "StartTime": "2022-03-17T17:00:00.000Z",
             "EndTime": "2022-03-17T19:30:00.000Z",
             "CategoryColor": "#ea7a57"
         },
@@ -109,8 +109,8 @@
             "Id": 38,
             "Subject": "Holi Sports Camp Day-7",
             "Location": "Sports Complex",
-            "StartTime": "2022-03-12T17:00:00.000Z",
-            "EndTime": "2022-03-17T19:30:00.000Z",
+            "StartTime": "2022-03-18T17:00:00.000Z",
+            "EndTime": "2022-03-18T19:30:00.000Z",
             "CategoryColor": "#ea7a57"
         },
         {

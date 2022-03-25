@@ -195,7 +195,7 @@ export class SearchEvents extends SampleBase {
                     cssClass="resource"
                     width="100%"
                     height="650px"
-                    selectedDate={new Date(2022, 0, 10)}
+                    selectedDate={new Date(2022, 2, 10)}
                     readonly={true}
                     ref={(schedule) => (this.scheduleObj = schedule)}
                     eventSettings={{ dataSource: this.data }}
