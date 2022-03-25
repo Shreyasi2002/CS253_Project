@@ -12,6 +12,7 @@ import Profile from "./pages/Profile";
 import Home from "./pages/Home";
 import LoginSignup from "./pages/LoginSignup";
 import News from "./pages/News";
+import Aeromodelling from "./pages/clubs/Aeromodelling";
 
 const theme = {
   mainColors: {
@@ -31,7 +32,8 @@ function App() {
         <Route path="/news" element={<News />} />
         <Route path="/fests" element={<Fests />} />
         <Route path="/clubs" element={<Clubs />} />
-        <Route path="/clubs/astronomy" element={<Astronomy />} />
+              <Route path="/clubs/astronomy" element={<Astronomy />} />
+              <Route path="/clubs/aeromodelling" element={<Aeromodelling />} />
         <Route path="/fests/antaragni" element={<Antaragni />} />
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/login" element={<LoginSignup />} />
