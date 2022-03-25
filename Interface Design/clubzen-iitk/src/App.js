@@ -8,7 +8,7 @@ import Councils from "./pages/Councils";
 import Fests from "./pages/Fests";
 import Antaragni from "./pages/fests/Antaragni";
 import Forum from "./pages/Forum";
-import Profile from "./pages/Profile"
+import Profile from "./pages/Profile";
 import Home from "./pages/Home";
 import LoginSignup from "./pages/LoginSignup";
 import News from "./pages/News";
@@ -33,9 +33,9 @@ function App() {
         <Route path="/clubs" element={<Clubs />} />
         <Route path="/clubs/astronomy" element={<Astronomy />} />
         <Route path="/fests/antaragni" element={<Antaragni />} />
-              <Route path="/calendar" element={<Calendar />} />
-              <Route path="/login" element={<LoginSignup />} />
-              <Route path="/profile" element={<Profile />} />
+        <Route path="/calendar" element={<Calendar />} />
+        <Route path="/login" element={<LoginSignup />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </ThemeProvider>
   );

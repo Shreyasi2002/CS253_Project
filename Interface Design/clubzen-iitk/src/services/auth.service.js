@@ -17,11 +17,14 @@ export const LoginAuth = async (username, password) => {
         });
     if (response.data.accessToken) {
         localStorage.setItem("user", JSON.stringify(response.data));
+        // window.location.reload();
     }
     return response.data;
 };
 export const LogoutAuth = () => {
-  localStorage.removeItem("user");
+    localStorage.removeItem("user");
+    // window.location.reload();
+    
 };
 
 export const GetCurrentUser = () => {
