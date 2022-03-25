@@ -1,0 +1,49 @@
+.header-start-gallery{
+    border-left: 1px solid black;
+    height: auto;
+    margin-left: 8%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.header-start-gallery > h6{
+    padding-left: 10%;
+    font-size: 14px;
+}
+
+.header-start-gallery > p{
+    border-left: 2px solid black;
+    padding-left: calc(10% - 1px);
+    font-size: 23px;
+}
+
+.column-gallery{
+    flex: 50%;
+}
+
+.row-gallery {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-delete {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+}
+
+.button-delete:hover{
+    cursor: pointer;
+}
+
+.gallery-display{
+    margin: 0 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.por-list{
+    margin: 0 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+}
