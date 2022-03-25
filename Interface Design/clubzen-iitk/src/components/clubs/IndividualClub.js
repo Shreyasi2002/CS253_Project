@@ -23,10 +23,12 @@ const IndividualClub = () => {
 
         <div className="row-grid">
           <div className="column-grid">
+            <StyledLink to="/clubs/aeromodelling">
             <div className="content-grid">
               <img src="/Images/snt/Aeromodelling.png" alt="aeromodelling" />
               <h3>Aeromodelling Club</h3>
             </div>
+            </StyledLink>
           </div>
           <div className="column-grid">
             <StyledLink to="/clubs/astronomy">

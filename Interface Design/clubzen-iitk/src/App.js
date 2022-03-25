@@ -12,6 +12,7 @@ import Profile from "./pages/Profile"
 import Home from "./pages/Home";
 import LoginSignup from "./pages/LoginSignup";
 import News from "./pages/News";
+import Aeromodelling from "./pages/clubs/Aeromodelling";
 
 const theme = {
   mainColors: {
@@ -36,7 +37,8 @@ function App() {
               <Route path="/calendar" element={<Calendar />} />
               <Route path="/login" element={<LoginSignup />} />
               <Route path="/profile" element={<Profile />} />
-      </Routes>
+              <Route path="/clubs/aeromodelling" element={<Aeromodelling />} />
+      </Routes>S
     </ThemeProvider>
   );
 }
