@@ -43,7 +43,7 @@ class GalleryAstronomy extends React.Component {
           <div className="header-start-gallery column-gallery">
             <h6>GALLERY</h6>
             <p>
-              Discover the various clubs and festivals - Become part of them ...
+              Discover astronomy club and its activities and  - Become part of them ...
             </p>
           </div>
           <div className="column-gallery">{/* empty */}</div>
@@ -72,10 +72,9 @@ class GalleryAstronomy extends React.Component {
             </div>
             <div className="row-gallery">
           <div className="header-start-gallery column-gallery">
-            <h6>PoR</h6>
-            <p>
-              Discover the various clubs and festivals - Become part of them ...
-            </p>
+            <h6>THE TEAM</h6>
+            
+            
           </div>
           <div className="column-gallery">{/* empty */}</div>
             </div>

@@ -43,7 +43,7 @@ class GalleryAeromodelling extends React.Component {
           <div className="header-start-gallery column-gallery">
             <h6>GALLERY</h6>
             <p>
-              Discover the various clubs and festivals - Become part of them ...
+              Discover the aeromodelling club and its activities and - Become part of them ...
             </p>
           </div>
           <div className="column-gallery">{/* empty */}</div>
@@ -72,10 +72,8 @@ class GalleryAeromodelling extends React.Component {
             </div>
             <div className="row-gallery">
           <div className="header-start-gallery column-gallery">
-            <h6>PoR</h6>
-            <p>
-              Discover the various clubs and festivals - Become part of them ...
-            </p>
+            <h6>THE TEAM</h6>
+            
           </div>
           <div className="column-gallery">{/* empty */}</div>
             </div>
@@ -83,14 +81,20 @@ class GalleryAeromodelling extends React.Component {
                 <div>
                 <ProfileUi
                     imgUrl='https://upload.wikimedia.org/wikipedia/commons/7/7e/Circle-icons-profile.svg'
-                    name='Name'
-                    designation="Secretary"
+                    name='Pranshu Singhal'
+                    designation="Coordinator"
                     /></div>
                 <div>
                 <ProfileUi
                     imgUrl='https://upload.wikimedia.org/wikipedia/commons/7/7e/Circle-icons-profile.svg'
-                    name='Name'
-                    designation="Secretary"
+                    name='Mohit Anand'
+                    designation="Coordinator"
+                /></div>
+                <div>
+                <ProfileUi
+                    imgUrl='https://upload.wikimedia.org/wikipedia/commons/7/7e/Circle-icons-profile.svg'
+                    name='Moin Ahmed'
+                    designation="Coordinator"
                 /></div>
             </div>
       </>
@@ -114,69 +118,62 @@ GalleryAeromodelling.propTypes = {
 GalleryAeromodelling.defaultProps = {
   images: [
     {
-      src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
+      src: "Images/clubs/aeromodelling/1.jpg",
       thumbnail:
-        "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
+        "Images/clubs/aeromodelling/1.jpg",
       thumbnailWidth: 320,
       thumbnailHeight: 274,
-      caption: "After Rain (Jeshu John - designerspics.com)",
+      caption: "",
     },
     {
-      src: "https://c6.staticflickr.com/9/8890/28897154101_a8f55be225_b.jpg",
+      src: "Images/clubs/aeromodelling/2.jpg",
       thumbnail:
-        "https://c6.staticflickr.com/9/8890/28897154101_a8f55be225_n.jpg",
+        "Images/clubs/aeromodelling/2.jpg",
       thumbnailWidth: 320,
       thumbnailHeight: 283,
-      caption: "37H (gratispgraphy.com)",
+      caption: "",
     },
     {
-      src: "https://c7.staticflickr.com/9/8106/28941228886_86d1450016_b.jpg",
+      src: "Images/clubs/aeromodelling/3.jpg",
       thumbnail:
-        "https://c7.staticflickr.com/9/8106/28941228886_86d1450016_n.jpg",
+        "Images/clubs/aeromodelling/3.jpg",
       thumbnailWidth: 271,
       thumbnailHeight: 320,
-      caption: "Orange Macro (Tom Eversley - isorepublic.com)",
+      caption: "",
     },
     {
-      src: "https://c6.staticflickr.com/9/8342/28897193381_800db6419e_b.jpg",
+      src: "Images/clubs/aeromodelling/4.jpg",
       thumbnail:
-        "https://c6.staticflickr.com/9/8342/28897193381_800db6419e_n.jpg",
+        "Images/clubs/aeromodelling/4.jpg",
       thumbnailWidth: 320,
       thumbnailHeight: 213,
-      caption: "201H (gratisography.com)",
+      caption: "",
     },
     {
-      src: "https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_b.jpg",
+      src: "Images/clubs/aeromodelling/5.jpeg",
       thumbnail:
-        "https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_n.jpg",
+        "Images/clubs/aeromodelling/5.jpeg",
       thumbnailWidth: 320,
       thumbnailHeight: 213,
-      caption: "Flower Interior Macro (Tom Eversley - isorepublic.com)",
+      caption: "",
     },
     {
-      src: "https://c1.staticflickr.com/9/8707/28868704912_cba5c6600e_b.jpg",
+      src: "Images/clubs/aeromodelling/6.jpg",
       thumbnail:
-        "https://c1.staticflickr.com/9/8707/28868704912_cba5c6600e_n.jpg",
+        "Images/clubs/aeromodelling/6.jpg",
       thumbnailWidth: 320,
       thumbnailHeight: 213,
-      caption: "Man on BMX (Tom Eversley - isorepublic.com)",
+      caption: "",
     },
     {
-      src: "https://c4.staticflickr.com/9/8578/28357117603_97a8233cf5_b.jpg",
+      src: "Images/clubs/aeromodelling/7.jpeg",
       thumbnail:
-        "https://c4.staticflickr.com/9/8578/28357117603_97a8233cf5_n.jpg",
+        "Images/clubs/aeromodelling/7.jpeg",
       thumbnailWidth: 320,
       thumbnailHeight: 213,
-      caption: "Ropeman - Thailand (Tom Eversley - isorepublic.com)",
+      caption: "",
     },
-    {
-      src: "https://c1.staticflickr.com/9/8056/28354485944_148d6a5fc1_b.jpg",
-      thumbnail:
-        "https://c1.staticflickr.com/9/8056/28354485944_148d6a5fc1_n.jpg",
-      thumbnailWidth: 257,
-      thumbnailHeight: 320,
-      caption: "A photo by 贝莉儿 NG. (unsplash.com)",
-    },
+    
   ],
 };
 
