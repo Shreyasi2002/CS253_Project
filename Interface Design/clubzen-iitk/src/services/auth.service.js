@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL = "https://cs253-signin-signup.herokuapp.com/";
+const API_URL = "https://cs253-clubzen-iitk.herokuapp.com/";
 
 export const RegisterAuth = (username, fullname, email, password) => {
   return axios.post(API_URL + "signup", {
@@ -15,7 +15,7 @@ export const LoginAuth = async (username, password) => {
             username,
             password,
         });
-    if (response.data.accessToken) {
+    if (response.data) {
         localStorage.setItem("user", JSON.stringify(response.data));
         // window.location.reload();
     }
