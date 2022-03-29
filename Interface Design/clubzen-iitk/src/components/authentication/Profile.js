@@ -20,8 +20,8 @@ const ProfileDisplay = () => {
       </p>
       <strong>Authorities:</strong>
       <ul>
-        {currentUser.roles &&
-          currentUser.roles.map((role, index) => <li key={index}>{role}</li>)}
+        {currentUser.role &&
+          currentUser.role.map((role, index) => <li key={index}>{role}</li>)}
           </ul>
           <button onClick={logOut}>Logout</button>
     </div>

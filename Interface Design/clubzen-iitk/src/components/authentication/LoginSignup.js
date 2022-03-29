@@ -124,19 +124,19 @@ const LoginRegister = (props) => {
         }
     };
     return (
-        <>
+        <div className="middle-show">
             <div className="container-log">
-                <Input type="checkbox" id="flip" />
+                <input type="checkbox" id="flip" />
                 <div className="cover">
                     <div className="front">
-                        <img src="images/frontImg.jpg" alt="" />
+                        <img src="Images/login.jpg" alt="" />
                         <div className="text">
                             <span className="text-1">Every new friend is a <br /> new adventure</span>
                             <span className="text-2">Let's get connected</span>
                         </div>
                     </div>
                     <div className="back">
-                        <img className="backImg" src="images/backImg.jpg" alt="" />
+                        <img className="backImg" src="Images/signup.jpg" alt="" />
                         <div className="text">
                             <span className="text-1">Complete miles of journey <br /> with one step</span>
                             <span className="text-2">Let's get started</span>
@@ -151,7 +151,7 @@ const LoginRegister = (props) => {
                                 <div className="input-boxes">
                                     <div className="input-box">
                                         <label htmlFor="username"><i className="fas fa-envelope" /></label>
-                                        <Input
+                                        <input
                                             type="text"
                                             placeholder="Enter your username"
                                             name="username"
@@ -162,7 +162,7 @@ const LoginRegister = (props) => {
                                     </div>
                                     <div className="input-box">
                                         <label htmlFor="password"><i className="fas fa-lock" /></label>
-                                        <Input
+                                        <input
                                             type="password"
                                             placeholder="Enter your password"
                                             name="password"
@@ -172,7 +172,7 @@ const LoginRegister = (props) => {
                                         />
                                     </div>
                                     <div className="button input-box">
-                                        <Input type="submit" value="Sumbit" />
+                                        <input type="submit" value="Sumbit" />
                                     </div>
                                     <div className="text sign-up-text">Don't have an account? <label htmlFor="flip">Sigup now</label></div>
                                 </div>
@@ -185,7 +185,7 @@ const LoginRegister = (props) => {
                                 <div className="input-boxes">
                                     <div className="input-box">
                                         <label htmlFor="username"><i className="fas fa-user" /></label>
-                                        <Input
+                                        <input
                                             type="text"
                                             placeholder="Enter your username"
                                             name="username"
@@ -196,7 +196,7 @@ const LoginRegister = (props) => {
                                     </div>
                                     <div className="input-box">
                                         <label htmlFor="fullname"><i className="fas fa-user" /></label>
-                                        <Input
+                                        <input
                                             type="text"
                                             placeholder="Enter your full name"
                                             name="fullname"
@@ -207,7 +207,7 @@ const LoginRegister = (props) => {
                                     </div>
                                     <div className="input-box">
                                         <label htmlFor="email"><i className="fas fa-envelope" /></label>
-                                        <Input
+                                        <input
                                             type="text"
                                             placeholder="Enter your email"
                                             name="email"
@@ -218,7 +218,7 @@ const LoginRegister = (props) => {
                                     </div>
                                     <div className="input-box">
                                         <label htmlFor="password"><i className="fas fa-lock" /></label>
-                                        <Input
+                                        <input
                                             type="password"
                                             placeholder="Enter your password"
                                             name="password"
@@ -228,7 +228,7 @@ const LoginRegister = (props) => {
                                         />
                                     </div>
                                     <div className="button input-box">
-                                        <Input type="submit" value="Sumbit" />
+                                        <input type="submit" value="Submit" />
                                     </div>
                                     <div className="text sign-up-text">Already have an account? <label htmlFor="flip">Login now</label></div>
                                 </div>
@@ -238,7 +238,7 @@ const LoginRegister = (props) => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

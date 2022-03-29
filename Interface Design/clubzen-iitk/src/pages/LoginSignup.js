@@ -7,8 +7,9 @@ import MainPageLayout from '../components/MainPageLayout'
 const LoginSignup = () => {
   return (
       <MainPageLayout color="black">
-          <Login />
-          <Register />
+          {/* <Login />
+          <Register /> */}
+          <LoginRegister />
     </MainPageLayout>
   )
 }
