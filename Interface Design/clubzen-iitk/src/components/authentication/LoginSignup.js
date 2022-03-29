@@ -93,6 +93,7 @@ const LoginRegister = (props) => {
                 (response) => {
                     setMessage(response.data.message);
                     setSuccessful(true);
+                    window.location.reload(false);
                     navigate('/login')
                 },
                 (error) => {
@@ -109,7 +110,7 @@ const LoginRegister = (props) => {
         }
     };
     const handleLogin = (e) => {
-        
+
         e.preventDefault();
         setMessage("");
         setLoading(true);
@@ -186,6 +187,13 @@ const LoginRegister = (props) => {
                                     <div className="button input-box">
                                         <input type="submit" value="Login" />
                                     </div>
+                                    {message && (
+                                        <div className="input-box">
+                                            <div className="alert alert-danger" role="alert">
+                                                {message}
+                                            </div>
+                                        </div>
+                                    )}
                                     <div className="text sign-up-text">Don't have an account? <label htmlFor="flip">Sigup now</label></div>
                                 </div>
                                 <CheckButton style={{ display: "none" }} ref={checkBtn} />
@@ -242,6 +250,16 @@ const LoginRegister = (props) => {
                                     <div className="button input-box">
                                         <input type="submit" value="Submit" />
                                     </div>
+                                    {message && (
+                                        <div className="input-box">
+                                            <div
+                                                className={successful ? "alert alert-success" : "alert alert-danger"}
+                                                role="alert"
+                                            >
+                                                {message}
+                                            </div>
+                                        </div>
+                                    )}
                                     <div className="text sign-up-text">Already have an account? <label htmlFor="flip">Login now</label></div>
                                 </div>
                                 <CheckButton style={{ display: "none" }} ref={checkBtn} />
