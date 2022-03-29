@@ -26,12 +26,23 @@ import * as dataSource from "./datasource.json";
 
 const data = dataSource;
 
+
+const Admin = () => {
+    const [admin, setAdmin] = useState(false);
+    useEffect(() => {
+        const user =  GetCurrentUser();
+        if (user) {
+          setAdmin(user.role.includes("admin"));
+        }
+    }, []);
+}
+
 export class SearchEvents extends SampleBase {
   constructor() {
     super(...arguments);
     this.data = extend([], data.scheduleData, null, true);
   }
-  globalSearch(args) {
+    globalSearch(args) {
     let searchString = args.target.value;
     if (searchString !== "") {
       new DataManager(this.scheduleObj.getEvents(null, null, true))
@@ -177,7 +188,8 @@ export class SearchEvents extends SampleBase {
       this.scheduleObj.element.style.display = "block";
     }
   }
-  render() {
+    render() {
+        var admin = Admin.admin;
     return (
       <>
         <head>
@@ -191,7 +203,7 @@ export class SearchEvents extends SampleBase {
             <div className="col-lg-9 control-section">
               <div className="control-wrapper">
                 <div className="col-md-12">
-                  <ScheduleComponent
+                  {admin? (<ScheduleComponent
                     id="schedule"
                     cssClass="resource"
                     width="100%"
@@ -202,7 +214,17 @@ export class SearchEvents extends SampleBase {
                     eventSettings={{ dataSource: this.data }}
                   >
                     <Inject services={[Day, Week, WorkWeek, Month, Agenda]} />
-                  </ScheduleComponent>
+                  </ScheduleComponent>):(<ScheduleComponent
+                    id="schedule"
+                    cssClass="resource"
+                    width="100%"
+                    height="650px"
+                    selectedDate={new Date(2022, 2, 10)}
+                    ref={(schedule) => (this.scheduleObj = schedule)}
+                    eventSettings={{ dataSource: this.data }}
+                  >
+                    <Inject services={[Day, Week, WorkWeek, Month, Agenda]} />
+                  </ScheduleComponent>)}
                   <div id="grid"></div>
                 </div>
               </div>
