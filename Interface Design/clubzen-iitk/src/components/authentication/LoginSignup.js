@@ -1,10 +1,16 @@
 import React, { useState, useRef } from "react";
 import Form from "react-validation/build/form";
-import Input from "react-validation/build/input";
+// import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
 import { LoginAuth } from "../../services/auth.service";
 import { isEmail } from "validator";
 import { RegisterAuth } from "../../services/auth.service";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faLock } from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { faPenClip } from "@fortawesome/free-solid-svg-icons";
 
 import './LoginSignup.css'
 
@@ -150,7 +156,7 @@ const LoginRegister = (props) => {
                             <Form onSubmit={handleLogin} ref={form}>
                                 <div className="input-boxes">
                                     <div className="input-box">
-                                        <label htmlFor="username"><i className="fas fa-envelope" /></label>
+                                        <label htmlFor="username"><FontAwesomeIcon icon={faUser} /></label>
                                         <input
                                             type="text"
                                             placeholder="Enter your username"
@@ -161,7 +167,7 @@ const LoginRegister = (props) => {
                                         />
                                     </div>
                                     <div className="input-box">
-                                        <label htmlFor="password"><i className="fas fa-lock" /></label>
+                                        <label htmlFor="password"><FontAwesomeIcon icon={faLock} /></label>
                                         <input
                                             type="password"
                                             placeholder="Enter your password"
@@ -184,7 +190,7 @@ const LoginRegister = (props) => {
                             <Form onSubmit={handleRegister} ref={form}>
                                 <div className="input-boxes">
                                     <div className="input-box">
-                                        <label htmlFor="username"><i className="fas fa-user" /></label>
+                                        <label htmlFor="username"><FontAwesomeIcon icon={faUser} /></label>
                                         <input
                                             type="text"
                                             placeholder="Enter your username"
@@ -195,7 +201,7 @@ const LoginRegister = (props) => {
                                         />
                                     </div>
                                     <div className="input-box">
-                                        <label htmlFor="fullname"><i className="fas fa-user" /></label>
+                                        <label htmlFor="fullname"><FontAwesomeIcon icon={faPenClip} /></label>
                                         <input
                                             type="text"
                                             placeholder="Enter your full name"
@@ -206,7 +212,7 @@ const LoginRegister = (props) => {
                                         />
                                     </div>
                                     <div className="input-box">
-                                        <label htmlFor="email"><i className="fas fa-envelope" /></label>
+                                        <label htmlFor="email"><FontAwesomeIcon icon={faEnvelope} /></label>
                                         <input
                                             type="text"
                                             placeholder="Enter your email"
@@ -217,7 +223,7 @@ const LoginRegister = (props) => {
                                         />
                                     </div>
                                     <div className="input-box">
-                                        <label htmlFor="password"><i className="fas fa-lock" /></label>
+                                        <label htmlFor="password"><FontAwesomeIcon icon={faLock} /></label>
                                         <input
                                             type="password"
                                             placeholder="Enter your password"
