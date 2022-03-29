@@ -4,6 +4,8 @@ import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
 import { LoginAuth } from "../../services/auth.service";
 
+import './LoginSignup.css'
+
 const required = (value) => {
     if (!value) {
         return (
@@ -55,55 +57,47 @@ const Login = (props) => {
         }
     };
     return (
-        <div className="col-md-12">
-            <div className="card card-container">
-                <img
-                    src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
-                    alt="profile-img"
-                    className="profile-img-card"
+        <Form onSubmit={handleLogin} ref={form}>
+            <div className="input-box">
+                <label htmlFor="username">Username</label>
+                <Input
+                    type="text"
+                    className="form-control"
+                    name="username"
+                    value={username}
+                    onChange={onChangeUsername}
+                    validations={[required]}
                 />
-                <Form onSubmit={handleLogin} ref={form}>
-                    <div className="form-group">
-                        <label htmlFor="username">Username</label>
-                        <Input
-                            type="text"
-                            className="form-control"
-                            name="username"
-                            value={username}
-                            onChange={onChangeUsername}
-                            validations={[required]}
-                        />
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="password">Password</label>
-                        <Input
-                            type="password"
-                            className="form-control"
-                            name="password"
-                            value={password}
-                            onChange={onChangePassword}
-                            validations={[required]}
-                        />
-                    </div>
-                    <div className="form-group">
-                        <button className="btn btn-primary btn-block" disabled={loading}>
-                            {loading && (
-                                <span className="spinner-border spinner-border-sm"></span>
-                            )}
-                            <span>Login</span>
-                        </button>
-                    </div>
-                    {message && (
-                        <div className="form-group">
-                            <div className="alert alert-danger" role="alert">
-                                {message}
-                            </div>
-                        </div>
-                    )}
-                    <CheckButton style={{ display: "none" }} ref={checkBtn} />
-                </Form>
             </div>
-        </div>
+            <div className="input-box">
+                <label htmlFor="password">Password</label>
+                <Input
+                    type="password"
+                    className="form-control"
+                    name="password"
+                    value={password}
+                    onChange={onChangePassword}
+                    validations={[required]}
+                />
+            </div>
+            <div className="button input-box">
+                <button className="btn btn-primary btn-block" disabled={loading}>
+                    {loading && (
+                        <span className="spinner-border spinner-border-sm"></span>
+                    )}
+                    <span>Login</span>
+                </button>
+            </div>
+            {message && (
+                <div className="input-box">
+                    <div className="alert alert-danger" role="alert">
+                        {message}
+                    </div>
+                </div>
+            )}
+            <div className="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label></div>
+            <CheckButton style={{ display: "none" }} ref={checkBtn} />
+        </Form>
     );
 };
 export default Login;
