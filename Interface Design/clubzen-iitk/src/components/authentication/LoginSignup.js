@@ -12,6 +12,8 @@ import { faLock } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faPenClip } from "@fortawesome/free-solid-svg-icons";
 
+import { useNavigate } from 'react-router-dom';
+
 import './LoginSignup.css'
 
 const required = (value) => {
@@ -55,6 +57,7 @@ const vpassword = (value) => {
 };
 
 const LoginRegister = (props) => {
+    let navigate = useNavigate();
     const form = useRef();
     const checkBtn = useRef();
     const [username, setUsername] = useState("");
@@ -90,6 +93,7 @@ const LoginRegister = (props) => {
                 (response) => {
                     setMessage(response.data.message);
                     setSuccessful(true);
+                    navigate('/login')
                 },
                 (error) => {
                     const resMessage =
@@ -105,6 +109,7 @@ const LoginRegister = (props) => {
         }
     };
     const handleLogin = (e) => {
+        
         e.preventDefault();
         setMessage("");
         setLoading(true);
@@ -112,7 +117,8 @@ const LoginRegister = (props) => {
         if (checkBtn.current.context._errors.length === 0) {
             LoginAuth(username, password).then(
                 () => {
-                    props.history.push("/profile");
+                    // props.history.push("/profile");
+                    navigate("/profile")
                 },
                 (error) => {
                     const resMessage =
@@ -178,7 +184,7 @@ const LoginRegister = (props) => {
                                         />
                                     </div>
                                     <div className="button input-box">
-                                        <input type="submit" value="Sumbit" />
+                                        <input type="submit" value="Login" />
                                     </div>
                                     <div className="text sign-up-text">Don't have an account? <label htmlFor="flip">Sigup now</label></div>
                                 </div>
