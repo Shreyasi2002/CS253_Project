@@ -1,8 +1,13 @@
 import React from "react";
-import {GetCurrentUser, LogoutAuth} from "../../services/auth.service";
+import { GetCurrentUser, LogoutAuth } from "../../services/auth.service";
+
+import { useNavigate } from 'react-router-dom';
+
 const ProfileDisplay = () => {
+    let navigate = useNavigate();
     const logOut = () => {
         LogoutAuth();
+        navigate("/login")
       };
   const currentUser = GetCurrentUser();
   return (
