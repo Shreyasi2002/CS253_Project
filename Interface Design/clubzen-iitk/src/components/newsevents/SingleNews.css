@@ -1,0 +1,25 @@
+.single-news{
+    margin: 5%;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 3%;
+    padding-top: 2%;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.list-news{
+    list-style: none;
+}
+
+.single-news .image-news{
+    width: 50%;
+    height: auto;
+}
+
+.news-heading{
+    font-size: 23px;
+}
+
+.news-subheading{
+    font-size: 18px;
+}

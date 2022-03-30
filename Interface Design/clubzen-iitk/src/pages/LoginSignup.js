@@ -1,13 +1,13 @@
 import React from 'react'
-import Login from '../components/authentication/Login'
-import Register from '../components/authentication/Register'
+import LoginRegister from '../components/authentication/LoginSignup'
 import MainPageLayout from '../components/MainPageLayout'
 
 const LoginSignup = () => {
   return (
       <MainPageLayout>
-          <Login />
-          <Register />
+          {/* <Login />
+          <Register /> */}
+          <LoginRegister />
     </MainPageLayout>
   )
 }

@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import ProfileUi from 'react-profile-card'
+import ProfileUi from 'react-profile-card';
 import Gallery from "react-grid-gallery";
 
 import "../Gallery.css";
 
-class GalleryAstronomy extends React.Component {
+class GalleryAeromodelling extends React.Component {
   constructor(props) {
     super(props);
 
@@ -43,7 +43,7 @@ class GalleryAstronomy extends React.Component {
           <div className="header-start-gallery column-gallery">
             <h6>GALLERY</h6>
             <p>
-              Discover astronomy club and its activities and  - Become part of them ...
+              Discover the astronomy club and its activities and - Become part of them ...
             </p>
           </div>
           <div className="column-gallery">{/* empty */}</div>
@@ -54,7 +54,8 @@ class GalleryAstronomy extends React.Component {
               display: "block",
               minHeight: "1px",
               width: "100%",
-              overflow: "auto",
+              overflowY:"auto",
+              overflowX:"hidden",
             }}
           >
             <Gallery
@@ -74,11 +75,10 @@ class GalleryAstronomy extends React.Component {
           <div className="header-start-gallery column-gallery">
             <h6>THE TEAM</h6>
             
-            
           </div>
           <div className="column-gallery">{/* empty */}</div>
             </div>
-            <div className="THE TEAM">
+            <div className="por-list">
                 <div>
                 <ProfileUi
                     imgUrl='https://upload.wikimedia.org/wikipedia/commons/7/7e/Circle-icons-profile.svg'
@@ -109,7 +109,7 @@ class GalleryAstronomy extends React.Component {
   }
 }
 
-GalleryAstronomy.propTypes = {
+GalleryAeromodelling.propTypes = {
   images: PropTypes.arrayOf(
     PropTypes.shape({
       src: PropTypes.string.isRequired,
@@ -122,7 +122,7 @@ GalleryAstronomy.propTypes = {
   ).isRequired,
 };
 
-GalleryAstronomy.defaultProps = {
+GalleryAeromodelling.defaultProps = {
   images: [
     {
       src: "Images/clubs/astronomy/1.jpg",
@@ -165,7 +165,7 @@ GalleryAstronomy.defaultProps = {
       caption: "",
     },
     {
-      src: "Images/clubs/astronomy/6.jpg",
+      src: "Images/clubs/astronomyg/6.jpg",
       thumbnail:
         "Images/clubs/astronomy/6.jpg",
       thumbnailWidth: 320,
