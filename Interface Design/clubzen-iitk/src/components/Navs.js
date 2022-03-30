@@ -50,14 +50,14 @@ const Navs = () => {
             ))}
             {currentUser ? (
               <>
-                <li>
+                {/* <li>
                   <NavLink
                     to="/forum"
                     className={"/forum" === location.pathname ? "active" : ""}
                   >
                     Forum
                   </NavLink>
-                </li>
+                </li> */}
                 <li>
                   <NavLink
                     to="/profile"
@@ -96,14 +96,14 @@ const Navs = () => {
             ))}
             {currentUser ? (
               <>
-                <li>
+                {/* <li>
                   <NavLink
                     to="/forum"
                     className={"/forum" === location.pathname ? "active" : ""}
                   >
                     Forum
                   </NavLink>
-                </li>
+                </li> */}
                 <li>
                   <NavLink
                     to="/profile"

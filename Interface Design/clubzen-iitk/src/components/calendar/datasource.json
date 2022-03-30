@@ -115,12 +115,172 @@
         },
         {
             "Id": 39,
-            "Subject": "Techkriti",
-            "Location": "IITK campus",
-            "StartTime": "2022-03-24T18:30:00.000Z",
-            "EndTime": "2022-03-27T18:30:00.000Z",
+            "Subject": "Exhibition by PDRL ",
+            "Location": "Auditorium, Virtual Platform",
+            "StartTime": "2022-03-25T11:00:00.000Z",
+            "EndTime": "2022-03-25T12:00:00.000Z",
             "CategoryColor": "#ea7a57"
+        },
+        {
+            "Id": 40,
+            "Subject": "Entrepreneurial Conclave: Panel - 1 ",
+            "Location": "Auditorium, Virtual Platform",
+            "StartTime": "2022-03-25T12:00:00.000Z",
+            "EndTime": "2022-03-25T13:00:00.000Z",
+            "CategoryColor": "#ea7a57"
+        },
+        {
+            "Id": 41,
+            "Subject": "Data Analytics ",
+            "Location": "Auditorium, Virtual Platform",
+            "StartTime": "2022-03-25T13:00:00.000Z",
+            "EndTime": "2022-03-25T16:00:00.000Z",
+            "CategoryColor": "#ea7a57"
+            
+        },
+        {
+            "Id": 42,
+            "Subject": "Opening Ceremony",
+            "Location": "Auditorium, Virtual Platform",
+            "StartTime": "2022-03-25T17:00:00.000Z",
+            "EndTime": "2022-03-25T18:00:00.000Z",
+            "CategoryColor": "#ea7a57"
+        },
+        {
+            "Id": 43,
+            "Subject": "Entrepreneurial Conclave: Panel - 2",
+            "Location": "Auditorium, Virtual Platform",
+            "StartTime": "2022-03-26T11:00:00.000Z",
+            "EndTime": "2022-03-26T12:00:00.000Z",
+            "CategoryColor": "#ea7a57"
+        },
+        {
+            "Id": 44,
+            "Subject": "Talk by Ali Lemus ",
+            "Location": "Auditorium, Virtual Platform",
+            "StartTime": "2022-03-26T12:00:00.000Z",
+            "EndTime": "2022-03-26T13:00:00.000Z",
+            "CategoryColor": "#ea7a57"
+        },
+        {
+            "Id": 45,
+            "Subject": "Talk by Tejus Venkatesh ",
+            "Location": "Auditorium, Virtual Platform",
+            "StartTime": "2022-03-26T13:30:00.000Z",
+            "EndTime": "2022-03-26T15:00:00.000Z",
+            "CategoryColor": "#ea7a57"
+            
+        },
+        {
+            "Id": 46,
+            "Subject": "Talk by Shri Shivasharanappa G N, IAS",
+            "Location": "Auditorium, Virtual Platform",
+            "StartTime": "2022-03-26T14:00:00.000Z",
+            "EndTime": "2022-03-26T15:00:00.000Z",
+            "CategoryColor": "#ea7a57"
+        },
+        {
+            "Id": 47,
+            "Subject": "Talk by Hardika Shah",
+            "Location": "Auditorium, Virtual Platform",
+            "StartTime": "2022-03-26T15:30:00.000Z",
+            "EndTime": "2022-03-26T16:00:00.000Z",
+            "CategoryColor": "#ea7a57"
+            
+        },
+        {
+            "Id": 48,
+            "Subject": "Talk by Ankit Prasad",
+            "Location": "Auditorium, Virtual Platform",
+            "StartTime": "2022-03-26T16:15:00.000Z",
+            "EndTime": "2022-03-26T17:15:00.000Z",
+            "CategoryColor": "#ea7a57"
+            
+        },
+        {
+            "Id": 49,
+            "Subject": "Talk by Pankaj Agarwal",
+            "Location": "Auditorium, Virtual Platform",
+            "StartTime": "2022-03-26T17:15:00.000Z",
+            "EndTime": "2022-03-26T18:00:00.000Z",
+            "CategoryColor": "#ea7a57"
+        },
+        {
+            "Id": 50,
+            "Subject": "Talk by Viral Shah",
+            "Location": "Auditorium, Virtual Platform",
+            "StartTime": "2022-03-26T18:00:00.000Z",
+            "EndTime": "2022-03-26T19:00:00.000Z",
+            "CategoryColor": "#ea7a57"
+            
+        },
+        {
+            "Id": 51,
+            "Subject": "Comedy Night - Sahil Shah",
+            "Location": "Auditorium, IITK",
+            "StartTime": "2022-03-26T16:20:00.000Z",
+            "EndTime": "2022-03-26T22:00:00.000Z",
+            "CategoryColor": "#ea7a57"
+        },
+        {
+            "Id": 52,
+            "Subject": "Talk by Robert Metcalfe ",
+            "Location": "Auditorium, Virtual Platform",
+            "StartTime": "2022-03-27T10:00:00.000Z",
+            "EndTime": "2022-03-27T11:00:00.000Z",
+            "CategoryColor": "#ea7a57"
+        },
+        {
+            "Id": 53,
+            "Subject": "Talk by Gautam Khanna",
+            "Location": "Auditorium, Virtual Platform",
+            "StartTime": "2022-03-27T11:00:00.000Z",
+            "EndTime": "2022-03-27T12:00:00.000Z",
+            "CategoryColor": "#ea7a57"
+        },
+        {
+            "Id": 54,
+            "Subject": "Panel of Prof. Susan Blackmore, Prof. N. Srinivasan, Prof. Nisheeth Srivastava, Prof. Arnab Bhattacharya, Prof. Devpriya Kumar (Moderator) ",
+            "Location": "Auditorium, Virtual Platform",
+            "StartTime": "2022-03-27T15:00:00.000Z",
+            "EndTime": "2022-03-27T16:00:00.000Z",
+            "CategoryColor": "#ea7a57"
+            
+        },
+        {
+            "Id": 55,
+            "Subject": "Talk by Sahej Rahal",
+            "Location": "Auditorium, Virtual Platform",
+            "StartTime": "2022-03-27T14:00:00.000Z",
+            "EndTime": "2022-03-27T15:00:00.000Z",
+            "CategoryColor": "#ea7a57"
+        },
+        {
+            "Id": 56,
+            "Subject": "Talk by Sankar Kumar Pal",
+            "Location": "Auditorium, Virtual Platform",
+            "StartTime": "2022-03-27T16:15:00.000Z",
+            "EndTime": "2022-03-27T17:15:00.000Z",
+            "CategoryColor": "#ea7a57"
+        },
+        {
+            "Id": 57,
+            "Subject": "Talk by Bjarne Stroustrup",
+            "Location": "Auditorium, Virtual Platform",
+            "StartTime": "2022-03-27T18:00:00.000Z",
+            "EndTime": "2022-03-27T19:00:00.000Z",
+            "CategoryColor": "#ea7a57"
+        },
+        {
+            "Id": 58,
+            "Subject": "Bollywood Night - Shaan",
+            "Location": "Pronite Ground, IITK",
+            "StartTime": "2022-03-27T20:00:00.000Z",
+            "EndTime": "2022-03-27T22:00:00.000Z",
+            "CategoryColor": "#ea7a57"
+            
         }
+
     ]
    
 }
