@@ -1,0 +1,12 @@
+.avatar{
+    width: 200px;
+    height: 200px;
+    width: auto !important;
+    height: auto !important;
+    font-size: 100px;
+}
+
+.container-profile{
+    display: flex;
+    justify-content: center;
+}
