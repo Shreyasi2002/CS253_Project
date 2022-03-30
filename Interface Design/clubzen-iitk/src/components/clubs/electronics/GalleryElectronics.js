@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import ProfileUi from 'react-profile-card';
+import ProfileUi from "../../misc/ProfileUI";
 import Gallery from "react-grid-gallery";
 
 import "../Gallery.css";
@@ -74,7 +74,9 @@ class GalleryElectronics extends React.Component {
             <div className="row-gallery">
           <div className="header-start-gallery column-gallery">
             <h6>THE TEAM</h6>
-            
+            <p>
+                            Meet the team - PoR (Positions of Responsibility) Holders
+                        </p>
           </div>
           <div className="column-gallery">{/* empty */}</div>
             </div>

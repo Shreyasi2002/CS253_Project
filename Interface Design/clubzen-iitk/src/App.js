@@ -35,7 +35,7 @@ function App() {
         <Route path="/clubs" element={<Clubs />} />
               <Route path="/clubs/astronomy" element={<Astronomy />} />
               <Route path="/clubs/aeromodelling" element={<Aeromodelling />} />
-              <Route path="/clubs/" element={<Electronics />} />
+              <Route path="/clubs/electronics" element={<Electronics />} />
         <Route path="/fests/antaragni" element={<Antaragni />} />
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/login" element={<LoginSignup />} />

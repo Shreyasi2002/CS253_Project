@@ -74,7 +74,9 @@ class GalleryAeromodelling extends React.Component {
             <div className="row-gallery">
           <div className="header-start-gallery column-gallery">
             <h6>THE TEAM</h6>
-            
+            <p>
+                            Meet the team - PoR (Positions of Responsibility) Holders
+                        </p>
           </div>
           <div className="column-gallery">{/* empty */}</div>
             </div>

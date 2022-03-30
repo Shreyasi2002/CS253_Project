@@ -51,10 +51,12 @@ const IndividualClub = () => {
                         </div>
                     </div>
                     <div className="column-grid">
-                        <div className="content-grid">
-                            <img src="/Images/snt/Electronics.png" alt="electronics" />
-                            <h3>Electronics Club</h3>
-                        </div>
+                        <StyledLink to="/clubs/electronics">
+                            <div className="content-grid">
+                                <img src="/Images/snt/Electronics.png" alt="electronics" />
+                                <h3>Electronics Club</h3>
+                            </div>
+                        </StyledLink>
                     </div>
                     <div className="column-grid">
                         <div className="content-grid">
