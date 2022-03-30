@@ -205,3 +205,15 @@
     margin: 10%;
 }
 
+.alert{
+    font-size: 13px;
+}
+
+.alert-danger{
+    color: red;
+}
+
+.alert-success {
+    color: green;
+}
+

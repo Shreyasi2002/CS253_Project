@@ -48,14 +48,14 @@ const NavsWhite = () => {
           ))}
           {currentUser ? (
             <>
-              <li>
+              {/* <li>
                 <NavLink
                   to="/forum"
                   className={"/forum" === location.pathname ? "active" : ""}
                 >
                   Forum
                 </NavLink>
-              </li>
+              </li> */}
               <li>
                 <NavLink
                   to="/profile"
@@ -94,14 +94,14 @@ const NavsWhite = () => {
           ))}
           {currentUser ? (
             <>
-              <li>
+              {/* <li>
                 <NavLink1
                   to="/forum"
                   className={"/forum" === location.pathname ? "active" : ""}
                 >
                   Forum
                 </NavLink1>
-              </li>
+              </li> */}
               <li>
                 <NavLink1
                   to="/profile"
