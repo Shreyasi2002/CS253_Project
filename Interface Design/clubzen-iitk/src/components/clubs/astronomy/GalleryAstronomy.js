@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import ProfileUi from 'react-profile-card'
+import ProfileUi from "../../misc/ProfileUI";
 import Gallery from "react-grid-gallery";
 
 import "../Gallery.css";

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import ProfileUi from 'react-profile-card';
+import ProfileUi from "../../misc/ProfileUI";
 import Gallery from "react-grid-gallery";
 
 import "../Gallery.css";
@@ -121,56 +121,56 @@ GalleryAeromodelling.defaultProps = {
       src: "Images/clubs/aeromodelling/1.jpg",
       thumbnail:
         "Images/clubs/aeromodelling/1.jpg",
-      thumbnailWidth: 320,
-      thumbnailHeight: 274,
+      thumbnailWidth: 1320,
+      thumbnailHeight: 1274,
       caption: "",
     },
     {
       src: "Images/clubs/aeromodelling/2.jpg",
       thumbnail:
         "Images/clubs/aeromodelling/2.jpg",
-      thumbnailWidth: 320,
-      thumbnailHeight: 283,
+      thumbnailWidth: 1320,
+      thumbnailHeight: 1283,
       caption: "",
     },
     {
       src: "Images/clubs/aeromodelling/3.jpg",
       thumbnail:
         "Images/clubs/aeromodelling/3.jpg",
-      thumbnailWidth: 271,
-      thumbnailHeight: 320,
+      thumbnailWidth: 1271,
+      thumbnailHeight: 1320,
       caption: "",
     },
     {
       src: "Images/clubs/aeromodelling/4.jpg",
       thumbnail:
         "Images/clubs/aeromodelling/4.jpg",
-      thumbnailWidth: 320,
-      thumbnailHeight: 213,
+      thumbnailWidth: 1320,
+      thumbnailHeight: 1213,
       caption: "",
     },
     {
       src: "Images/clubs/aeromodelling/5.jpeg",
       thumbnail:
         "Images/clubs/aeromodelling/5.jpeg",
-      thumbnailWidth: 320,
-      thumbnailHeight: 213,
+      thumbnailWidth: 1320,
+      thumbnailHeight: 1213,
       caption: "",
     },
     {
       src: "Images/clubs/aeromodelling/6.jpg",
       thumbnail:
         "Images/clubs/aeromodelling/6.jpg",
-      thumbnailWidth: 320,
-      thumbnailHeight: 213,
+      thumbnailWidth: 1320,
+      thumbnailHeight: 1213,
       caption: "",
     },
     {
       src: "Images/clubs/aeromodelling/7.jpeg",
       thumbnail:
         "Images/clubs/aeromodelling/7.jpeg",
-      thumbnailWidth: 320,
-      thumbnailHeight: 213,
+      thumbnailWidth: 1320,
+      thumbnailHeight: 1213,
       caption: "",
     },
     
