@@ -1,0 +1,27 @@
+.container-h{
+    position: relative;
+    text-align: center;
+    color:white;
+    background-color: black;
+}
+
+.content-h{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-h > h1{
+    font-size: 47px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.content-h > p{
+    font-size: 20px;
+}
+
+.image-h{
+    width: 100%;
+}
