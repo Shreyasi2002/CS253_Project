@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 import './Profile.css'
 
-import { Avatar } from 'rsuite'
+import Avatar from 'rsuite/Avatar';
 import { getNameInitials } from "../misc/NameInitials";
 
 const ProfileDisplay = () => {
@@ -16,7 +16,7 @@ const ProfileDisplay = () => {
   const currentUser = GetCurrentUser();
   return (
       <div className="container-profile">
-          <Avatar style={{ background: '#004299' }} className="avatar">
+          <Avatar circle size="lg" style={{ background: '#004299' }} className="avatar">
           { getNameInitials(currentUser.fullname) }
           </Avatar>
       <header className="jumbotron">
