@@ -1,11 +1,20 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+
+import { GetCurrentUser } from '../../services/auth.service'
 
 import './Forum.css'
 import { StyledLink } from '../Links.styled'
 
 const Forum = () => {
+    const [currentUser, setCurrentUser] = useState(undefined);
+  useEffect(() => {
+    const user = GetCurrentUser();
+    if (user) {
+      setCurrentUser(user);
+    }
+  }, []);
   return (
       <div className='background-forum'>
           &nbsp;
@@ -20,10 +29,13 @@ const Forum = () => {
                   </p>
                   <br/>
             </div>
-            <StyledLink to='/news' className='forum-button'>
+            {currentUser? (<StyledLink to='/news' className='forum-button'>
                 <n>Explore Events</n>
                 <FontAwesomeIcon className='icon-button' icon={faArrowRight} />
-            </StyledLink>
+            </StyledLink>):(<StyledLink to='/login' className='forum-button'>
+                <n>Explore Events</n>
+                <FontAwesomeIcon className='icon-button' icon={faArrowRight} />
+            </StyledLink>)}
             <br/><br/><br/>
             &nbsp;
           </div>
