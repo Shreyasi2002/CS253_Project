@@ -14,7 +14,7 @@ var LINKS = [
   { to: "/councils", text: "Councils" },
   { to: "/fests", text: "Festivals" },
   { to: "/clubs", text: "Clubs" },
-  { to: "/news", text: "News & Feed" },
+//   { to: "/news", text: "News & Feed" },
   { to: "/calendar", text: "Calendar" },
 ];
 
@@ -50,14 +50,14 @@ const Navs = () => {
             ))}
             {currentUser ? (
               <>
-                {/* <li>
+                <li>
                   <NavLink
-                    to="/forum"
-                    className={"/forum" === location.pathname ? "active" : ""}
+                    to="/news"
+                    className={"/news" === location.pathname ? "active" : ""}
                   >
-                    Forum
+                    News & Events
                   </NavLink>
-                </li> */}
+                </li>
                 <li>
                   <NavLink
                     to="/profile"
@@ -96,14 +96,14 @@ const Navs = () => {
             ))}
             {currentUser ? (
               <>
-                {/* <li>
+                <li>
                   <NavLink
-                    to="/forum"
-                    className={"/forum" === location.pathname ? "active" : ""}
+                    to="/news"
+                    className={"/news" === location.pathname ? "active" : ""}
                   >
-                    Forum
+                    News & Events
                   </NavLink>
-                </li> */}
+                </li>
                 <li>
                   <NavLink
                     to="/profile"

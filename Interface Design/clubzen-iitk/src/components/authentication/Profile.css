@@ -1,12 +1,38 @@
-.avatar{
+.avatar-container{
     width: 200px;
     height: 200px;
-    width: auto !important;
-    height: auto !important;
     font-size: 100px;
+    background-color: #bbb;
+    display: inline-block;
+    border-radius: 50%;
+    /* position: relative; */
 }
+
+.avatar{
+    margin: 0;
+    /* position: absolute; */
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+}
+
 
 .container-profile{
     display: flex;
     justify-content: center;
+    margin-top: 10%;
+    font-size: 20px;
+}
+
+.logout{
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 7px;
+    font-size: 18px;
+    padding: 10px 10px;
+    font-family: 'MontSerrat', sans-serif;
+    margin-top: 2%;
 }
