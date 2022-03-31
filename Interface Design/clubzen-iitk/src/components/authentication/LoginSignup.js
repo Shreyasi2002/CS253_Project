@@ -103,7 +103,7 @@ const LoginRegister = (props) => {
                             error.response.data.message) ||
                         error.message ||
                         error.toString();
-                    setMessage(resMessage);
+                    setMessage("Kindly recheck your username and email");
                     setSuccessful(false);
                 }
             );
@@ -117,9 +117,10 @@ const LoginRegister = (props) => {
         form.current.validateAll();
         if (checkBtn.current.context._errors.length === 0) {
             LoginAuth(username, password).then(
-                () => {
+                (response) => {
                     // props.history.push("/profile");
                     navigate("/profile")
+                    setMessage(response.data.message)
                 },
                 (error) => {
                     const resMessage =
@@ -129,7 +130,7 @@ const LoginRegister = (props) => {
                         error.message ||
                         error.toString();
                     setLoading(false);
-                    setMessage(resMessage);
+                    setMessage("Wrong Credentials");
                 }
             );
         } else {
