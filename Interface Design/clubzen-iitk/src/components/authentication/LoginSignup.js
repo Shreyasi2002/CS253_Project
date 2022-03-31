@@ -91,7 +91,7 @@ const LoginRegister = (props) => {
         if (checkBtn.current.context._errors.length === 0) {
             RegisterAuth(username, fullname, email, password).then(
                 (response) => {
-                    setMessage(response.data.message);
+                    setMessage("User registered successfully");
                     setSuccessful(true);
                     window.location.reload(false);
                     navigate('/login')
@@ -103,7 +103,10 @@ const LoginRegister = (props) => {
                             error.response.data.message) ||
                         error.message ||
                         error.toString();
-                    setMessage("Kindly recheck your username and email");
+                    if(resMessage === "Network Error")
+                        setMessage(resMessage);
+                    else
+                        setMessage("Kindly recheck your credentials");
                     setSuccessful(false);
                 }
             );
