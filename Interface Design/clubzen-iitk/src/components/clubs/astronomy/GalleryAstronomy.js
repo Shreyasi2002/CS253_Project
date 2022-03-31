@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import ProfileUi from "../../misc/ProfileUI";
+
 import Gallery from "react-grid-gallery";
 
 import "../Gallery.css";
@@ -43,7 +44,7 @@ class GalleryAstronomy extends React.Component {
                     <div className="header-start-gallery column-gallery">
                         <h6>GALLERY</h6>
                         <p>
-                            Discover the various clubs and festivals - Become part of them ...
+                            Discover the astronomy club and its activities and - Become part of them ...
                         </p>
                     </div>
                     <div className="column-gallery">{/* empty */}</div>
@@ -54,7 +55,8 @@ class GalleryAstronomy extends React.Component {
                             display: "block",
                             minHeight: "1px",
                             width: "100%",
-                            overflow: "auto",
+                            overflowY: "auto",
+                            overflowX: "hidden",
                         }}
                     >
                         <Gallery
@@ -72,9 +74,9 @@ class GalleryAstronomy extends React.Component {
                 </div>
                 <div className="row-gallery">
                     <div className="header-start-gallery column-gallery">
-                        <h6>PoR</h6>
+                        <h6>THE TEAM</h6>
                         <p>
-                            Discover the various clubs and festivals - Become part of them ...
+                            Meet the team - PoR (Positions of Responsibility) Holders
                         </p>
                     </div>
                     <div className="column-gallery">{/* empty */}</div>
@@ -83,14 +85,26 @@ class GalleryAstronomy extends React.Component {
                     <div>
                         <ProfileUi
                             imgUrl='https://upload.wikimedia.org/wikipedia/commons/7/7e/Circle-icons-profile.svg'
-                            name='Name'
-                            designation="Secretary"
+                            name='Gurbaaz Singh Nandra'
+                            designation="Coordinator"
                         /></div>
                     <div>
                         <ProfileUi
                             imgUrl='https://upload.wikimedia.org/wikipedia/commons/7/7e/Circle-icons-profile.svg'
-                            name='Name'
-                            designation="Secretary"
+                            name='Mohammad Saad'
+                            designation="Coordinator"
+                        /></div>
+                    <div>
+                        <ProfileUi
+                            imgUrl='https://upload.wikimedia.org/wikipedia/commons/7/7e/Circle-icons-profile.svg'
+                            name='Sunny Kumar Bhagat'
+                            designation="Coordinator"
+                        /></div>
+                    <div>
+                        <ProfileUi
+                            imgUrl='https://upload.wikimedia.org/wikipedia/commons/7/7e/Circle-icons-profile.svg'
+                            name='Varun Muralidharan'
+                            designation="Coordinator"
                         /></div>
                 </div>
             </>
@@ -114,69 +128,62 @@ GalleryAstronomy.propTypes = {
 GalleryAstronomy.defaultProps = {
     images: [
         {
-            src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
+            src: "Images/clubs/astronomy/1.jpg",
             thumbnail:
-                "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
+                "Images/clubs/astronomy/1.jpg",
             thumbnailWidth: 320,
             thumbnailHeight: 274,
-            caption: "After Rain (Jeshu John - designerspics.com)",
+            caption: "",
         },
         {
-            src: "https://c6.staticflickr.com/9/8890/28897154101_a8f55be225_b.jpg",
+            src: "Images/clubs/astronomy/2.jpg",
             thumbnail:
-                "https://c6.staticflickr.com/9/8890/28897154101_a8f55be225_n.jpg",
+                "Images/clubs/astronomy/2.jpg",
             thumbnailWidth: 320,
             thumbnailHeight: 283,
-            caption: "37H (gratispgraphy.com)",
+            caption: "",
         },
         {
-            src: "https://c7.staticflickr.com/9/8106/28941228886_86d1450016_b.jpg",
+            src: "Images/clubs/astronomy/3.jpg",
             thumbnail:
-                "https://c7.staticflickr.com/9/8106/28941228886_86d1450016_n.jpg",
+                "Images/clubs/astronomy/3.jpg",
             thumbnailWidth: 271,
             thumbnailHeight: 320,
-            caption: "Orange Macro (Tom Eversley - isorepublic.com)",
+            caption: "",
         },
         {
-            src: "https://c6.staticflickr.com/9/8342/28897193381_800db6419e_b.jpg",
+            src: "Images/clubs/astronomy/4.jpg",
             thumbnail:
-                "https://c6.staticflickr.com/9/8342/28897193381_800db6419e_n.jpg",
+                "Images/clubs/astronomy/4.jpg",
             thumbnailWidth: 320,
             thumbnailHeight: 213,
-            caption: "201H (gratisography.com)",
+            caption: "",
         },
         {
-            src: "https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_b.jpg",
+            src: "Images/clubs/astronomy/5.jpg",
             thumbnail:
-                "https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_n.jpg",
+                "Images/clubs/astronomy/5.jpg",
             thumbnailWidth: 320,
             thumbnailHeight: 213,
-            caption: "Flower Interior Macro (Tom Eversley - isorepublic.com)",
+            caption: "",
         },
         {
-            src: "https://c1.staticflickr.com/9/8707/28868704912_cba5c6600e_b.jpg",
+            src: "Images/clubs/astronomyg/6.jpg",
             thumbnail:
-                "https://c1.staticflickr.com/9/8707/28868704912_cba5c6600e_n.jpg",
+                "Images/clubs/astronomy/6.jpg",
             thumbnailWidth: 320,
             thumbnailHeight: 213,
-            caption: "Man on BMX (Tom Eversley - isorepublic.com)",
+            caption: "",
         },
         {
-            src: "https://c4.staticflickr.com/9/8578/28357117603_97a8233cf5_b.jpg",
+            src: "Images/clubs/astronomy/7.jpg",
             thumbnail:
-                "https://c4.staticflickr.com/9/8578/28357117603_97a8233cf5_n.jpg",
+                "Images/clubs/astronomy/7.jpg",
             thumbnailWidth: 320,
             thumbnailHeight: 213,
-            caption: "Ropeman - Thailand (Tom Eversley - isorepublic.com)",
+            caption: "",
         },
-        {
-            src: "https://c1.staticflickr.com/9/8056/28354485944_148d6a5fc1_b.jpg",
-            thumbnail:
-                "https://c1.staticflickr.com/9/8056/28354485944_148d6a5fc1_n.jpg",
-            thumbnailWidth: 257,
-            thumbnailHeight: 320,
-            caption: "A photo by 贝莉儿 NG. (unsplash.com)",
-        },
+
     ],
 };
 
