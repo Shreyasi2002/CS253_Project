@@ -1,13 +1,13 @@
-package com.loginsignup;
+package com.porholdersdirectories;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class LoginSignupApplication {
+public class PorholdersdirectoriesApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(LoginSignupApplication.class, args);
+		SpringApplication.run(PorholdersdirectoriesApplication.class, args);
 	}
 
 }
