@@ -9,7 +9,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,22 +20,17 @@ import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.server.ResponseStatusException;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.security.crypto.bcrypt.BCrypt;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import com.clubzen.models.*;
+import com.clubzen.models.Error;
 import com.clubzen.exceptions.ResourceNotFoundException;
-import com.clubzen.models.UserModel;
-import com.clubzen.models.porHolderModel;
 import com.clubzen.repositories.UserRepository;
 import com.clubzen.repositories.porHolderModelRepository;
-import com.clubzen.models.ForumCommentModel;
-import com.clubzen.models.ForumContentModel;
-import com.clubzen.models.ForumModel;
 import com.clubzen.repositories.ForumRepository;
 
 @RestController
 @CrossOrigin(origins = "*")
-@Validated
-@EnableWebMvc
 public class clubzenController {
 
 	UserModel user = new UserModel();
@@ -50,10 +44,8 @@ public class clubzenController {
 	@Autowired
 	private ForumRepository forumRepository;
 	
-	int logRounds = 20;
-	String passwordHash = BCrypt.hashpw("samplehashablepasswordforencoder", 
-											BCrypt.gensalt(logRounds));;
-
+	String _salt = BCrypt.gensalt();
+	BCryptPasswordEncoder bcryptEncoder = new BCryptPasswordEncoder();
 	
 	//UserModel Mappings
 	
@@ -74,21 +66,27 @@ public class clubzenController {
 	@PostMapping("/signin")
 	public ResponseEntity<?> authenticateUser(@RequestBody UserModel userModel) {
         List<UserModel> userList = userRepository.findAll();
-        String encodedPassword = BCrypt.hashpw(userModel.getPassword(), BCrypt.gensalt());
-	
+//        String encodedPassword = new String(BCrypt.hashpw(userModel.getPassword(), _salt));
+//        String encodedPassword = bcryptEncoder.encode(userModel.getPassword());
+//        System.out.println(encodedPassword);
+        
         for(UserModel u: userList){
             if(u.getUsername().equals(userModel.getUsername())){
-                if(!u.getPassword().equals(encodedPassword)){
+//                if(u.getPassword().equals(encodedPassword)){
+//            	if(!u.getPassword().equals(userModel.getPassword())){
+            	if(bcryptEncoder.matches(userModel.getPassword(), u.getPassword())){
                 	
-                    return new ResponseEntity<>(u, HttpStatus.NOT_ACCEPTABLE);
+                	user = u;
+                	
+                	return new ResponseEntity<>(u, HttpStatus.ACCEPTED);
                 }
-            	user = u;
-            	
-                return new ResponseEntity<>(u, HttpStatus.ACCEPTED);
+                else {
+                	return new ResponseEntity<>("Wrong Password", HttpStatus.NOT_ACCEPTABLE);
+                }
             }
         }
         
-        return new ResponseEntity<>(userModel,HttpStatus.NOT_FOUND);
+        return new ResponseEntity<>("Username not found", HttpStatus.NOT_FOUND);
 	}
 	
 	@PostMapping("/signout")
@@ -98,8 +96,8 @@ public class clubzenController {
         	user = null;
             return new ResponseEntity<>(HttpStatus.ACCEPTED);
         }
-		user = null;
-		return new ResponseEntity<>(HttpStatus.ACCEPTED);
+		
+		return new ResponseEntity<>(HttpStatus.NON_AUTHORITATIVE_INFORMATION);
 	}
 
 	@PostMapping("/signup")
@@ -109,7 +107,7 @@ public class clubzenController {
         for(UserModel u: userList){
             if(u.getUsername().equals(userModel.getUsername()) ||
                     u.getEmail().equals(userModel.getEmail()))
-                return new ResponseEntity<>(HttpStatus.NOT_ACCEPTABLE);
+                return new ResponseEntity<>("User Already Exists", HttpStatus.NOT_ACCEPTABLE);
         }
 		
 		String domainName = "";
@@ -120,10 +118,10 @@ public class clubzenController {
 		    usermailname = parts[0];
 		}
 		if (!domainName.equals("iitk.ac.in")) {
-			return new ResponseEntity<>(HttpStatus.NOT_ACCEPTABLE);
+			return new ResponseEntity<>("Email id must be an IITK mail id", HttpStatus.NOT_ACCEPTABLE);
         }
 		if (!usermailname.equals(userModel.getUsername())) {
-			return new ResponseEntity<>(HttpStatus.NOT_ACCEPTABLE);
+			return new ResponseEntity<>("Username and Email must be same", HttpStatus.NOT_ACCEPTABLE);
         }
 		
 		List<porHolderModel> porHoldersList = porHolderRepository.findAll();
@@ -149,7 +147,7 @@ public class clubzenController {
 		
 		userModel.setRole(roles);
 		
-		userModel.setPassword(BCrypt.hashpw(userModel.getPassword(), BCrypt.gensalt()));
+		userModel.setPassword(bcryptEncoder.encode(userModel.getPassword()));
 
 		UserModel user = userRepository.save(userModel);
 

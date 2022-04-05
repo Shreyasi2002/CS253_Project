@@ -1,13 +1,13 @@
-package com.clubzen;
+package com.porholdersdirectories;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ClubzenApplication {
+public class PorholdersdirectoriesApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ClubzenApplication.class, args);
+		SpringApplication.run(PorholdersdirectoriesApplication.class, args);
 	}
 
 }
