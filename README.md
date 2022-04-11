@@ -65,11 +65,5 @@ The webpage can be tested using npm as stated in "Installation" part.
 
 The Backend Units can be tested using POSTMAN or any other API Client.
 
-The links to access the different APIS of different units are -
-
-1) loginsignup - [LoginSignup](https://cs253-signin-signup.herokuapp.com/)
-2) calendar - [Calendar](https://cs253-calendar.herokuapp.com/)
-3) newsandevents - [NewsAndEvents](https://cs253-news-and-events.herokuapp.com/)
-
 
 
