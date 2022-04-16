@@ -1,4 +1,4 @@
-# About Clubzen IITK
+# Clubzen IITK
 
 A platform to integrate all clubs and societies under MnC, SnT, etc., and College fests in a modular format. A separate feed will be created for each club and community.
 
