@@ -39,6 +39,8 @@ const ProfileDisplay = () => {
                         currentUser.role.map((role, index) => <li key={index}>{role}</li>)}
                 </ul>
                 <div className="logout-button"><button className="logout" onClick={logOut}>Logout</button></div>
+                <br/>
+                <div></div>
             </div></div>
     );
 };
