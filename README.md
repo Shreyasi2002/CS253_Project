@@ -1,5 +1,6 @@
 # Clubzen IITK
 
+
 A platform to integrate all clubs and societies under MnC, SnT, etc., and College fests in a modular format. A separate feed will be created for each club and community.
 
 The main features of the app are - 
@@ -65,5 +66,13 @@ The webpage can be tested using npm as stated in "Installation" part.
 
 The Backend Units can be tested using POSTMAN or any other API Client.
 
+## Images
+![abc](/images/login_page.jpg "login_page")
 
+![abc](/images/home_page.jpg "home_page")
 
+![abc](/images/events_section.jpg "events_section")
+
+![abc](/images/festivals.png "festivals")
+
+![abc](/images/calendar.png "calendar")
