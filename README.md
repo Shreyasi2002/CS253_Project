@@ -19,7 +19,7 @@ As of now, the front-end and the backend are separate units.
 
 For Back-end Part,
 
-RESTful APIs are deployed on Heroku using Github and can be accessed anywhere worldwide.
+REST APIs are deployed on Heroku using Github and can be accessed anywhere worldwide.
 
 For the Front-end Part,
 
@@ -36,9 +36,9 @@ The web app is deployed on Github-Pages and hosts the main page, login page, clu
 7) Spring Boot
 8) JDK (Java Development Kit)
 
-## Installation
+## Execution
 
-For Frontend, i.e., website,
+For running the Frontend part, i.e., website,
 
 1) Navigate to "/Interface Design/clubzen-iitk/".
 2) Open Command Line Terminal in this folder.
@@ -50,7 +50,7 @@ The webpage will automatically open in localhost (http://localhost:3000/).
 
 If it doesn't automatically open, the user can open it manually.
 
-For the Back-end part,
+For running the Back-end part,
 
 1) Navigate to "/Backend Units/{calendar or loginsignup or newsandevents}/".
 2) Open Command Line Terminal in this folder.
