@@ -66,8 +66,19 @@ The webpage can be tested using npm as stated in "Installation" part.
 
 The Backend Units can be tested using POSTMAN or any other API Client.
 
-## Images
+# User guide
 ![abc](/images/login_page.jpg "login_page")
+Users who have previously registered for the ClubZen Web Application must login by: 
+  - Entering their Username.
+  - Entering their Password. 
+
+ Clicking on Login will advance to the Profile page and logged in users can begin using the application.
+
+Site Registration
+
+Users who have not previously registered for the ClubZen Web Application must select     “Don’t have an account? Signup now” to access the “New User Registration” page.    
+
+
 
 ![abc](/images/home_page.jpg "home_page")
 
