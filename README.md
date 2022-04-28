@@ -39,8 +39,11 @@ The web app is deployed on Github-Pages and hosts the main page, login page, clu
 ## Codebase Navigation
 
 FrontEnd
+
 The Front-end code is present in “/Interface Design/clubzen-iitk/”. The “src” folder contains all the React source code files.
+
 BackEnd
+ 
 The Back-end code is present in “/Backend Units”. The individual folders contain the source codes of the individual units. 
 The “clubzen” unit is the integration of all the units into one single unit. The “src” folder in every unit folder contains 
 the source code files individually. However, the “sample data” folder contains some sample data fetched from the MongoDB database 
