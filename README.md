@@ -1,5 +1,6 @@
 # Clubzen IITK
 
+
 A platform to integrate all clubs and societies under MnC, SnT, etc., and College fests in a modular format. A separate feed will be created for each club and community.
 
 The main features of the app are - 
@@ -18,7 +19,7 @@ As of now, the front-end and the backend are separate units.
 
 For Back-end Part,
 
-RESTful APIs are deployed on Heroku using Github and can be accessed anywhere worldwide.
+REST APIs are deployed on Heroku using Github and can be accessed anywhere worldwide.
 
 For the Front-end Part,
 
@@ -35,9 +36,23 @@ The web app is deployed on Github-Pages and hosts the main page, login page, clu
 7) Spring Boot
 8) JDK (Java Development Kit)
 
-## Installation
+## Codebase Navigation
 
-For Frontend, i.e., website,
+FrontEnd
+
+The Front-end code is present in “/Interface Design/clubzen-iitk/”. The “src” folder contains all the React source code files.
+
+BackEnd
+ 
+The Back-end code is present in “/Backend Units”. The individual folders contain the source codes of the individual units. 
+The “clubzen” unit is the integration of all the units into one single unit. The “src” folder in every unit folder contains 
+the source code files individually. However, the “sample data” folder contains some sample data fetched from the MongoDB database 
+to be used for demonstration purposes. The src folders’ basic structure is divided into models, repositories, exceptions, 
+controllers, listeners, configurations, etc.
+
+## Execution
+
+For running the Frontend part, i.e., website,
 
 1) Navigate to "/Interface Design/clubzen-iitk/".
 2) Open Command Line Terminal in this folder.
@@ -49,7 +64,7 @@ The webpage will automatically open in localhost (http://localhost:3000/).
 
 If it doesn't automatically open, the user can open it manually.
 
-For the Back-end part,
+For running the Back-end part,
 
 1) Navigate to "/Backend Units/{calendar or loginsignup or newsandevents}/".
 2) Open Command Line Terminal in this folder.
@@ -65,5 +80,24 @@ The webpage can be tested using npm as stated in "Installation" part.
 
 The Backend Units can be tested using POSTMAN or any other API Client.
 
+# User guide
+![abc](/images/login_page.jpg "login_page")
+Users who have previously registered for the ClubZen Web Application must login by: 
+  - Entering their Username.
+  - Entering their Password. 
+
+ Clicking on Login will advance to the Profile page and logged in users can begin using the application.
+
+Site Registration
+
+Users who have not previously registered for the ClubZen Web Application must select     “Don’t have an account? Signup now” to access the “New User Registration” page.    
 
 
+
+![abc](/images/home_page.jpg "home_page")
+
+![abc](/images/events_section.jpg "events_section")
+
+![abc](/images/festivals.png "festivals")
+
+![abc](/images/calendar.png "calendar")
