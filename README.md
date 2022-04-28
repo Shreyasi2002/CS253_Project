@@ -36,6 +36,17 @@ The web app is deployed on Github-Pages and hosts the main page, login page, clu
 7) Spring Boot
 8) JDK (Java Development Kit)
 
+## Codebase Navigation
+
+FrontEnd
+The Front-end code is present in “/Interface Design/clubzen-iitk/”. The “src” folder contains all the React source code files.
+BackEnd
+The Back-end code is present in “/Backend Units”. The individual folders contain the source codes of the individual units. 
+The “clubzen” unit is the integration of all the units into one single unit. The “src” folder in every unit folder contains 
+the source code files individually. However, the “sample data” folder contains some sample data fetched from the MongoDB database 
+to be used for demonstration purposes. The src folders’ basic structure is divided into models, repositories, exceptions, 
+controllers, listeners, configurations, etc.
+
 ## Execution
 
 For running the Frontend part, i.e., website,
